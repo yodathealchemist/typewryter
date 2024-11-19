@@ -33,3 +33,17 @@ export default function RootLayout({
     </html>
   );
 }
+
+import Link from 'next/link';
+
+export default function NavBar() {
+  return (
+    <nav style={{ padding: '10px', backgroundColor: '#f8f9fa', borderBottom: '1px solid #ddd' }}>
+      <Link href="/">Home</Link> | 
+      <Link href="/stories/fantasy">Fantasy</Link> | 
+      <Link href="/stories/crime">Crime</Link> | 
+      <Link href="/stories/romance">Romance</Link>
+    </nav>
+  );
+}
+

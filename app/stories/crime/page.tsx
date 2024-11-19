@@ -34,6 +34,24 @@ export default function CrimeStory() {
       }}
     >
       <h1>Crime Story</h1>
+
+
+      {/* Advertisement Placeholder*/}
+      <div
+        style={{
+          width: "80%",
+          height: "200px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "20px 0",
+        }}
+      >
+        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+      </div>
+      
       <p>Unravel the mystery.</p>
       <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
         <label
@@ -58,6 +76,23 @@ export default function CrimeStory() {
           Submit
         </button>
       </form>
+
+            {/* Advertisement Placeholder*/}
+      <div
+        style={{
+          width: "80%",
+          height: "200px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "20px 0",
+        }}
+      >
+        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+      </div>
+      
     </div>
   );
 }

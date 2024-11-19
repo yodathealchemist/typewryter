@@ -29,3 +29,17 @@ nav {
 .menu-link:active {
   color: #333; /* Prevent color change after click */
 }
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link:visited,
+.footer-link:active {
+  color: #333;
+}

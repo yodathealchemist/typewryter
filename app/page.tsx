@@ -10,22 +10,6 @@ export default function Home() {
       }}
     >
 
-      {/* Advertisement Placeholder at the top */}
-      <div
-        style={{
-          width: "80%",
-          height: "300px",
-          backgroundColor: "#f0f0f0",
-          border: "2px dashed #ccc",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "20px 0",
-        }}
-      >
-        <p style={{ color: "#999" }}>Advertisement Placeholder (Top)</p>
-      </div>
-
       {/* Main content area */}
       <div
         style={{
@@ -38,7 +22,7 @@ export default function Home() {
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 
-      {/* Advertisement Placeholder at the bottom */}
+      {/* Advertisement Placeholder */}
       <div
         style={{
           width: "80%",
@@ -51,7 +35,7 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder (Bottom)</p>
+        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
       </div>
     </div>
   );

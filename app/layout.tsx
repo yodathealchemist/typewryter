@@ -64,7 +64,7 @@ export default function RootLayout({
           </div>
 
           <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>
-            TypeWryter
+            Type_Wryter
           </h1>
 
           <nav>
@@ -88,9 +88,10 @@ export default function RootLayout({
                 style={{
                   position: "relative",
                 }}
+                className="dropdown"
               >
                 <div
-                  className="link"
+                  className="link dropdown-toggle"
                   style={{
                     cursor: "pointer",
                   }}

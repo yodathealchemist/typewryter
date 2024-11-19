@@ -106,6 +106,11 @@ export default function RootLayout({
                   </li>
                 </ul>
               </li>
+              <li>
+                <Link href="/backstage/" className="link">
+                  Backstage
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>

@@ -37,6 +37,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
+  backgroundColor: "#f8f9fa",
   top: 100%;
   left: 0;
   border: 1px solid #ddd;

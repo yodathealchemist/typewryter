@@ -36,7 +36,11 @@ nav {
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  font-weight: bold;
 }
 
 .footer-link:visited,

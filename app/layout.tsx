@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TypeWryter",
+  title: "Type_Wryter",
   description: "Interactive storytelling platform.",
 };
 

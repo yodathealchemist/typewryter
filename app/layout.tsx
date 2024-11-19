@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
 
@@ -64,16 +65,16 @@ export default function RootLayout({
               }}
             >
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="/stories/fantasy">Fantasy</a>
+                <Link href="/stories/fantasy">Fantasy</Link>
               </li>
               <li>
-                <a href="/stories/crime">Crime</a>
+                <Link href="/stories/crime">Crime</Link>
               </li>
               <li>
-                <a href="/stories/romance">Romance</a>
+                <Link href="/stories/romance">Romance</Link>
               </li>
             </ul>
           </nav>

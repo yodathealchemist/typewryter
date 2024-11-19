@@ -15,7 +15,7 @@ export default function FantasyStory() {
         <br />
         <textarea
           id="feedback"
-          rows="4"
+          rows={4} // Changed to number
           style={{ width: "100%", marginTop: "10px" }}
           placeholder="What would you like to see in this fantasy world?"
         ></textarea>

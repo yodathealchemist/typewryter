@@ -12,6 +12,49 @@ export default function Home() {
       <p>
         Welcome to the interactive storytelling platform where your imagination shapes the journey.
       </p>
+
+      {/* Advertisement Placeholder at the top */}
+      <div
+        style={{
+          width: "80%",
+          height: "100px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "20px 0",
+        }}
+      >
+        <p style={{ color: "#999" }}>Advertisement Placeholder (Top)</p>
+      </div>
+
+      {/* Main content area */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "600px",
+          margin: "20px 0",
+        }}
+      >
+        <p>Explore stories, contribute, and see how they evolve!</p>
+      </div>
+
+      {/* Advertisement Placeholder at the bottom */}
+      <div
+        style={{
+          width: "80%",
+          height: "100px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "20px 0",
+        }}
+      >
+        <p style={{ color: "#999" }}>Advertisement Placeholder (Bottom)</p>
+      </div>
     </div>
   );
 }

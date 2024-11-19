@@ -29,14 +29,14 @@ export default function CrimeStory() {
       <h1>Crime Story</h1>
       <p>Unravel the mystery.</p>
       <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-        <p><label htmlFor="feedback">Share your ideas to shape the story:</label></p>
-        <p><textarea
+        <label htmlFor="feedback" style={{ display: "block", marginBottom: "10px" }}>Share your ideas to shape the story:</label></p>
+        <textarea
           id="feedback"
           name="feedback"
           rows={4}
-          style={{ width: "20%", marginTop: "10px" }}
+          style={{ width: "20%", marginTop: "10px" display: "block", marginBottom: "10px" }}
           required
-        ></textarea></p>
+        ></textarea>
         <button type="submit" style={{ marginTop: "10px" }}>Submit</button>
       </form>
     </div>

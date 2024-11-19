@@ -81,7 +81,7 @@ export default function CrimeStory() {
       <div
         style={{
           width: "80%",
-          height: "200px",
+          height: "400px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",

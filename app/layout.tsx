@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
 
@@ -17,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Typewryter",
+  title: "TypeWryteR",
   description: "Interactive storytelling platform.",
 };
 
@@ -30,36 +29,58 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          fontFamily: "Arial, sans-serif",
+          backgroundColor: "#f4f4f9", // Update with your logo's background color
+          color: "#333",
+        }}
       >
-        <nav
+        <header
           style={{
-            padding: "10px",
-            backgroundColor: "#f8f9fa",
-            borderBottom: "1px solid #ddd",
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
+            padding: "20px",
           }}
         >
-          {/* Logo Section */}
-          <Image
-            src="/logo.webp"
-            alt="Typewryter Logo"
-            width={40}
-            height={40}
-            style={{ marginRight: "10px" }}
-          />
+          {/* Logo */}
+          <Image src="/logo.webp" alt="TypeWryteR Logo" width={80} height={80} />
 
-          {/* Navigation Links */}
-          <div>
-            <Link href="/">Home</Link> |{" "}
-            <Link href="/stories/fantasy">Fantasy</Link> |{" "}
-            <Link href="/stories/crime">Crime</Link> |{" "}
-            <Link href="/stories/romance">Romance</Link>
-          </div>
-        </nav>
+          {/* TWR Under the Logo */}
+          <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>
+            TWR
+          </h1>
+
+          {/* Menu */}
+          <nav>
+            <ul
+              style={{
+                display: "flex",
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                gap: "15px",
+                fontSize: "1.2rem",
+              }}
+            >
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/stories/fantasy">Fantasy</a>
+              </li>
+              <li>
+                <a href="/stories/crime">Crime</a>
+              </li>
+              <li>
+                <a href="/stories/romance">Romance</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
         {/* Main Content */}
-        {children}
+        <main style={{ marginTop: "20px" }}>{children}</main>
       </body>
     </html>
   );

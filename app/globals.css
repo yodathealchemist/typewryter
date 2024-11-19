@@ -30,10 +30,26 @@ nav {
   color: #333; /* Prevent color change after click */
 }
 
-.dropdown-content {
-  display: none;
+.dropdown {
+  position: relative;
 }
 
-.dropdown-content:hover {
-  display: flex; /* Show dropdown when hovered */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ddd;
+  z-index: 1;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 5px 0;
 }

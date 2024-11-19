@@ -18,8 +18,8 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-        <h2>Welcome to the interactive storytelling platform</h2>
-        <h3>where your imagination shapes the journey.</h3>
+        <h2 style={{ fontSize: "2rem" }}>Welcome to the interactive storytelling platform</h2>
+        <h3 style={{ fontSize: "1.5rem" }}>where your imagination shapes the journey.</h3>
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 

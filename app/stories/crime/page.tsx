@@ -1,28 +1,43 @@
+"use client";
+
 export default function CrimeStory() {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const comment = e.currentTarget.feedback.value;
+
+    const response = await fetch("/api/submitComment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        story: "crime",
+        chapter: "chapter1",
+        comment,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Your comment has been submitted!");
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+
+    e.currentTarget.reset();
+  };
+
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Crime Mystery</h1>
-      <p>
-        A dark and stormy night, a missing heirloom, and a detective who won&apos;t
-        stop until the truth is uncovered. Can you help solve the case?
-      </p>
-      <p>
-        Chapter 1: Coming Soon... Share your thoughts on how this mystery
-        unfolds!
-      </p>
-      <form style={{ marginTop: "20px" }}>
+      <h1>Crime Story</h1>
+      <p>Unravel the mystery. Share your ideas to shape the story below!</p>
+      <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
         <label htmlFor="feedback">Your Suggestions:</label>
-        <br />
         <textarea
           id="feedback"
-          rows={4} // Changed to number
+          name="feedback"
+          rows={4}
           style={{ width: "100%", marginTop: "10px" }}
-          placeholder="What twists and turns should this mystery take?"
+          required
         ></textarea>
-        <br />
-        <button type="submit" style={{ marginTop: "10px" }}>
-          Submit
-        </button>
+        <button type="submit" style={{ marginTop: "10px" }}>Submit</button>
       </form>
     </div>
   );

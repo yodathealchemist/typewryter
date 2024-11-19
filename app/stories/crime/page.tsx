@@ -10,7 +10,7 @@ export default function CrimeStory() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         story: "crime",
-        chapter: "chapter1",
+        chapter: "chapter0",
         comment,
       }),
     });

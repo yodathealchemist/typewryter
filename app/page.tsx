@@ -17,8 +17,8 @@ export default function Home() {
       {/* Circular Logo */}
       <div
         style={{
-          width: "100px",
-          height: "100px",
+          width: "150px",
+          height: "150px",
           borderRadius: "50%",
           overflow: "hidden",
           display: "flex",
@@ -29,8 +29,8 @@ export default function Home() {
         <Image
           src="/logo.webp"
           alt="TypeWryteR Logo"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           style={{ objectFit: "cover" }}
         />
       </div>

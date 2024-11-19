@@ -1,24 +1,21 @@
-import fs from "fs";
-import path from "path";
+import pool from '../../../db';
 
 export async function POST(req) {
   const { story, chapter, comment } = await req.json();
 
-  // Define the file path
-  const filePath = path.join(process.cwd(), "comments", `${story}-${chapter}.txt`);
+  try {
+    // Insert the comment into the database
+    const result = await pool.query(
+      'INSERT INTO comments (story, chapter, comment) VALUES ($1, $2, $3) RETURNING *',
+      [story, chapter, comment]
+    );
 
-  // Format the comment
-  const formattedComment = `Comment: ${comment}\nTimestamp: ${new Date().toISOString()}\n\n`;
-
-  // Ensure the comments folder exists
-  if (!fs.existsSync(path.join(process.cwd(), "comments"))) {
-    fs.mkdirSync(path.join(process.cwd(), "comments"));
+    return new Response(JSON.stringify(result.rows[0]), { status: 200 });
+  } catch (error) {
+    console.error('Error saving comment:', error);
+    return new Response(
+      JSON.stringify({ message: 'Failed to save comment.' }),
+      { status: 500 }
+    );
   }
-
-  // Write the comment to the file
-  fs.appendFileSync(filePath, formattedComment, "utf8");
-
-  return new Response(JSON.stringify({ message: "Comment saved successfully!" }), {
-    status: 200,
-  });
 }

@@ -79,24 +79,53 @@ export default function RootLayout({
               }}
             >
               <li>
-                <Link href="/" className="menu-link">
+                <Link href="/" className="link">
                   Home
                 </Link>
               </li>
-              <li>
-                <Link href="/stories/fantasy" className="menu-link">
-                  Fantasy
-                </Link>
-              </li>
-              <li>
-                <Link href="/stories/crime" className="menu-link">
-                  Crime
-                </Link>
-              </li>
-              <li>
-                <Link href="/stories/romance" className="menu-link">
-                  Romance
-                </Link>
+              {/* Dropdown Menu for Stories */}
+              <li
+                style={{
+                  position: "relative",
+                }}
+              >
+                <div
+                  className="link"
+                  style={{
+                    cursor: "pointer",
+                  }}
+                >
+                  Stories ▼
+                </div>
+                <ul
+                  style={{
+                    position: "absolute",
+                    border: "1px solid #ddd",
+                    listStyle: "none",
+                    padding: "10px",
+                    margin: "0",
+                    display: "none",
+                    flexDirection: "column",
+                    zIndex: 1,
+                  }}
+                  className="dropdown-content"
+                >
+                  <li>
+                    <Link href="/stories/fantasy" className="link">
+                      Fantasy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/stories/crime" className="link">
+                      Crime
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/stories/romance" className="link">
+                      Romance
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -104,11 +133,11 @@ export default function RootLayout({
 
         <main style={{ marginTop: "20px" }}>{children}</main>
 
-        {/* Footer Section */}
         <footer
           style={{
             marginTop: "50px",
             padding: "20px",
+            backgroundColor: "#f8f9fa",
             borderTop: "1px solid #ddd",
             textAlign: "center",
           }}
@@ -125,12 +154,12 @@ export default function RootLayout({
             }}
           >
             <li>
-              <Link href="/privacy-policy" className="footer-link">
+              <Link href="/privacy-policy" className="link">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/imprint" className="footer-link">
+              <Link href="/imprint" className="link">
                 Imprint
               </Link>
             </li>

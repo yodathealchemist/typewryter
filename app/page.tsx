@@ -11,11 +11,14 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* Logo */}
-      <Image src="/logo.webp" alt="TypeWryteR Logo" width={150} height={150} />
-      <h1 style={{ fontSize: "3rem", margin: "20px 0" }}>TypeWryteR</h1>
       <p>
-        Welcome to TypeWryteR, the interactive storytelling platform where your
+        Welcome to 
+      </p>
+      {/* Logo */}
+      <Image src="/logo.png" alt="TypeWryteR Logo" width={150} height={150} />
+      <h1 style={{ fontSize: "3rem", margin: "20px 0" }}>TypeWryter</h1>
+      <p>
+        the interactive storytelling platform where your
         imagination shapes the journey.
       </p>
     </div>

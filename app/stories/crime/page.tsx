@@ -17,24 +17,24 @@ export default function CrimeStory() {
 
     if (response.ok) {
       alert("Your comment has been submitted!");
+      form.reset();
     } else {
       alert("Something went wrong. Please try again.");
     }
 
-    e.currentTarget.reset();
   };
 
   return (
     <div style={{ padding: "20px" }}>
       <h1>Crime Story</h1>
-      <p>Unravel the mystery. Share your ideas to shape the story below!</p>
+      <p>Unravel the mystery.</p>
       <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-        <label htmlFor="feedback">Your Suggestions:</label>
+        <label htmlFor="feedback">Share your ideas to shape the story:</label>
         <textarea
           id="feedback"
           name="feedback"
           rows={4}
-          style={{ width: "100%", marginTop: "10px" }}
+          style={{ width: "20%", marginTop: "10px" }}
           required
         ></textarea>
         <button type="submit" style={{ marginTop: "10px" }}>Submit</button>

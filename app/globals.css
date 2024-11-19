@@ -37,7 +37,6 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  backgroundColor: "#f8f9fa";
   top: 100%;
   left: 0;
   border: 1px solid #ddd;
@@ -45,6 +44,9 @@ nav {
   list-style: none;
   padding: 10px;
   margin: 0;
+  background-color: #f8f9fa; /* Solid white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
+  border-radius: 4px; /* Optional rounded corners */
 }
 
 .dropdown:hover .dropdown-content {
@@ -53,4 +55,9 @@ nav {
 
 .dropdown-content li {
   margin: 5px 0;
+}
+
+.dropdown-content li:hover {
+  background-color: #f0f0f0; /* Subtle hover effect on items */
+  border-radius: 4px;
 }

@@ -82,16 +82,40 @@ export default function RootLayout({
               }}
             >
               <li>
-                <Link href="/">Home</Link>
+                <Link
+                  href="/"
+                  className="menu-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/stories/fantasy">Fantasy</Link>
+                <Link
+                  href="/stories/fantasy"
+                  className="menu-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Fantasy
+                </Link>
               </li>
               <li>
-                <Link href="/stories/crime">Crime</Link>
+                <Link
+                  href="/stories/crime"
+                  className="menu-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Crime
+                </Link>
               </li>
               <li>
-                <Link href="/stories/romance">Romance</Link>
+                <Link
+                  href="/stories/romance"
+                  className="menu-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Romance
+                </Link>
               </li>
             </ul>
           </nav>

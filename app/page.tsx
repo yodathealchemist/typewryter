@@ -1,14 +1,22 @@
-import Link from 'next/link';
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', padding: '20px' }}>
-      <h1>Welcome to Typewryter</h1>
-      <p>An interactive novella platform where readers shape the story.</p>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "40px",
+        textAlign: "center",
+      }}
+    >
+      {/* Logo */}
+      <Image src="/logo.webp" alt="TypeWryteR Logo" width={150} height={150} />
+      <h1 style={{ fontSize: "3rem", margin: "20px 0" }}>TypeWryteR</h1>
       <p>
-        <Link href="/stories/fantasy">Fantasy</Link> | 
-        <Link href="/stories/crime">Crime</Link> | 
-        <Link href="/stories/romance">Romance</Link>
+        Welcome to TypeWryteR, the interactive storytelling platform where your
+        imagination shapes the journey.
       </p>
     </div>
   );

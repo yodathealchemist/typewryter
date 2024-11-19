@@ -16,7 +16,7 @@ export default function RomanceStory() {
         <br />
         <textarea
           id="feedback"
-          rows="4"
+          rows={4} // Changed to number
           style={{ width: "100%", marginTop: "10px" }}
           placeholder="What twists and emotions should this story explore?"
         ></textarea>

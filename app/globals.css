@@ -14,32 +14,26 @@ nav {
 }
 
 /* Menu link styles */
-.menu-link {
+.link {
   font-weight: normal;
   color: #333;
   text-decoration: none; /* Remove underlines */
   transition: font-weight 0.2s ease; /* Smooth transition for hover effect */
 }
 
-.menu-link:hover {
+.link:hover {
   font-weight: bold; /* Bold on hover */
 }
 
-.menu-link:visited,
-.menu-link:active {
+.link:visited,
+.link:active {
   color: #333; /* Prevent color change after click */
 }
 
-.footer-link {
-  color: #333;
-  text-decoration: none;
+.dropdown-content {
+  display: none;
 }
 
-.footer-link:hover {
-  font-weight: bold;
-}
-
-.footer-link:visited,
-.footer-link:active {
-  color: #333;
+li:hover .dropdown-content {
+  display: flex; /* Show dropdown when hovered */
 }

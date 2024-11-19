@@ -40,7 +40,7 @@ export default function CrimeStory() {
           id="feedback"
           name="feedback"
           rows={4}
-          style={{ width: "20%", marginTop: "10px" display: "block", marginBottom: "10px" }}
+          style={{ width: "20%", marginTop: "10px", display: "block", marginBottom: "10px" }}
           required
         ></textarea>
         <button type="submit" style={{ marginTop: "10px" }}>Submit</button>

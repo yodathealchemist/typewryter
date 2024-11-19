@@ -43,8 +43,26 @@ export default function RootLayout({
             padding: "20px",
           }}
         >
-          {/* Logo */}
-          <Image src="/logo.webp" alt="TypeWryteR Logo" width={80} height={80} />
+          {/* Circular Logo */}
+          <div
+            style={{
+              width: "80px",
+              height: "80px",
+              borderRadius: "50%",
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src="/logo.webp"
+              alt="TypeWryteR Logo"
+              width={80}
+              height={80}
+              style={{ objectFit: "cover" }}
+            />
+          </div>
 
           {/* TWR Under the Logo */}
           <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>

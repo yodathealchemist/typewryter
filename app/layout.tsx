@@ -66,7 +66,7 @@ export default function RootLayout({
 
           {/* TWR Under the Logo */}
           <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>
-            T/W
+            TypeWryter
           </h1>
 
           {/* Menu */}

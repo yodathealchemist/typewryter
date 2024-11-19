@@ -13,21 +13,19 @@ nav {
   border-bottom: 1px solid #ddd;
 }
 
+/* Menu link styles */
 .menu-link {
   font-weight: normal;
-  color: black;
-  text-decoration: none; /* No underline by default */
+  color: #333;
+  text-decoration: none; /* Remove underlines */
+  transition: font-weight 0.2s ease; /* Smooth transition for hover effect */
 }
 
 .menu-link:hover {
-  font-weight: bold; /* Bold when hovered */
-  color: black; /* Keep the color consistent */
+  font-weight: bold; /* Bold on hover */
 }
 
-.menu-link:visited {
-  color: black; /* Prevent color change after clicking */
-}
-
+.menu-link:visited,
 .menu-link:active {
-  color: black; /* No color change on active state */
+  color: #333; /* Prevent color change after click */
 }

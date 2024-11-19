@@ -1,20 +1,23 @@
-import pool from '../../../lib/db';
+import pool from "../../../db";
 
 export async function POST(req) {
   const { story, chapter, comment } = await req.json();
 
   try {
-    // Insert the comment into the database
+    // Generate the current timestamp manually
+    const timestamp = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+
+    // Insert the comment along with the timestamp
     const result = await pool.query(
-      'INSERT INTO comments (story, chapter, comment) VALUES ($1, $2, $3) RETURNING *',
-      [story, chapter, comment]
+      `INSERT INTO comments (story, chapter, comment, timestamp) VALUES ($1, $2, $3, $4) RETURNING *`,
+      [story, chapter, comment, timestamp]
     );
 
     return new Response(JSON.stringify(result.rows[0]), { status: 200 });
   } catch (error) {
-    console.error('Error saving comment:', error);
+    console.error("Error saving comment:", error);
     return new Response(
-      JSON.stringify({ message: 'Failed to save comment.' }),
+      JSON.stringify({ message: "Failed to save comment." }),
       { status: 500 }
     );
   }

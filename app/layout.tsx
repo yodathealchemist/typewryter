@@ -83,34 +83,11 @@ export default function RootLayout({
                   Home
                 </Link>
               </li>
-              {/* Dropdown Menu for Stories */}
-              <li
-                style={{
-                  position: "relative",
-                }}
-                className="dropdown"
-              >
-                <div
-                  className="link dropdown-toggle"
-                  style={{
-                    cursor: "pointer",
-                  }}
-                >
+              <li className="dropdown">
+                <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
                   Stories ▼
                 </div>
-                <ul
-                  style={{
-                    position: "absolute",
-                    border: "1px solid #ddd",
-                    listStyle: "none",
-                    padding: "10px",
-                    margin: "0",
-                    display: "none",
-                    flexDirection: "column",
-                    zIndex: 1,
-                  }}
-                  className="dropdown-content"
-                >
+                <ul className="dropdown-content">
                   <li>
                     <Link href="/stories/fantasy" className="link">
                       Fantasy

@@ -34,6 +34,6 @@ nav {
   display: none;
 }
 
-li:hover .dropdown-content {
+.dropdown-content:hover {
   display: flex; /* Show dropdown when hovered */
 }

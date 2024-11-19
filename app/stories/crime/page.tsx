@@ -3,7 +3,7 @@ export default function CrimeStory() {
     <div style={{ padding: "20px" }}>
       <h1>Crime Mystery</h1>
       <p>
-        A dark and stormy night, a missing heirloom, and a detective who won't
+        A dark and stormy night, a missing heirloom, and a detective who won&apos;t
         stop until the truth is uncovered. Can you help solve the case?
       </p>
       <p>

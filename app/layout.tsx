@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TypeWryteR",
+  title: "TypeWryter",
   description: "Interactive storytelling platform.",
 };
 
@@ -32,7 +32,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
           fontFamily: "Arial, sans-serif",
-          backgroundColor: "#f4f4f9", // Update with your logo's background color
           color: "#333",
         }}
       >

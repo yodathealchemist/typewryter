@@ -138,7 +138,6 @@ export default function RootLayout({
           style={{
             marginTop: "50px",
             padding: "20px",
-            backgroundColor: "#f8f9fa",
             borderTop: "1px solid #ddd",
             textAlign: "center",
           }}

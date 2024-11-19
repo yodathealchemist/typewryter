@@ -34,9 +34,7 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-              <p>
-        Welcome to the interactive storytelling platform where your imagination shapes the journey.
-      </p>
+        <h1>Welcome to the interactive storytelling platform where your imagination shapes the journey.</h1>
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 

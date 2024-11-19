@@ -25,7 +25,13 @@ export default function CrimeStory() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "40px",
+        textAlign: "center",
+      }}>
       <h1>Crime Story</h1>
       <p>Unravel the mystery.</p>
       <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>

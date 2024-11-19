@@ -43,7 +43,6 @@ export default function RootLayout({
             padding: "20px",
           }}
         >
-          {/* Circular Logo */}
           <div
             style={{
               width: "75px",
@@ -64,12 +63,10 @@ export default function RootLayout({
             />
           </div>
 
-          {/* TWR Under the Logo */}
           <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>
             TypeWryter
           </h1>
 
-          {/* Menu */}
           <nav>
             <ul
               style={{
@@ -82,38 +79,22 @@ export default function RootLayout({
               }}
             >
               <li>
-                <Link
-                  href="/"
-                  className="menu-link"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                <Link href="/" className="menu-link">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/stories/fantasy"
-                  className="menu-link"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                <Link href="/stories/fantasy" className="menu-link">
                   Fantasy
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/stories/crime"
-                  className="menu-link"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                <Link href="/stories/crime" className="menu-link">
                   Crime
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/stories/romance"
-                  className="menu-link"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                <Link href="/stories/romance" className="menu-link">
                   Romance
                 </Link>
               </li>
@@ -121,8 +102,41 @@ export default function RootLayout({
           </nav>
         </header>
 
-        {/* Main Content */}
         <main style={{ marginTop: "20px" }}>{children}</main>
+
+        {/* Footer Section */}
+        <footer
+          style={{
+            marginTop: "50px",
+            padding: "20px",
+            backgroundColor: "#f8f9fa",
+            borderTop: "1px solid #ddd",
+            textAlign: "center",
+          }}
+        >
+          <ul
+            style={{
+              listStyle: "none",
+              padding: 0,
+              margin: 0,
+              display: "flex",
+              justifyContent: "center",
+              gap: "15px",
+              fontSize: "0.9rem",
+            }}
+          >
+            <li>
+              <Link href="/privacy-policy" className="footer-link">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/imprint" className="footer-link">
+                Imprint
+              </Link>
+            </li>
+          </ul>
+        </footer>
       </body>
     </html>
   );

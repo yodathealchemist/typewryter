@@ -17,7 +17,7 @@ export default function CrimeStory() {
 
     if (response.ok) {
       alert("Your comment has been submitted!");
-      e.currentTarget.reset();
+      e.Target.reset();
     } else {
       alert("Something went wrong. Please try again.");
     }

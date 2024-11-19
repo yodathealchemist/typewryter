@@ -1,28 +1,43 @@
+"use client";
+
 export default function FantasyStory() {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const comment = e.currentTarget.feedback.value;
+
+    const response = await fetch("/api/submitComment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        story: "fantasy",
+        chapter: "chapter1",
+        comment,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Your comment has been submitted!");
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+
+    e.currentTarget.reset();
+  };
+
   return (
     <div style={{ padding: "20px" }}>
       <h1>Fantasy Story</h1>
-      <p>
-        Step into a world of magic, mystery, and wonder. The winds whisper of
-        ancient prophecies and hidden powers waiting to be discovered.
-      </p>
-      <p>
-        Chapter 1: Coming Soon... Stay tuned for an enchanting journey where
-        your ideas shape the story!
-      </p>
-      <form style={{ marginTop: "20px" }}>
+      <p>Step into a world of magic, mystery, and wonder. Share your ideas below!</p>
+      <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
         <label htmlFor="feedback">Your Suggestions:</label>
-        <br />
         <textarea
           id="feedback"
-          rows={4} // Changed to number
+          name="feedback"
+          rows={4}
           style={{ width: "100%", marginTop: "10px" }}
-          placeholder="What would you like to see in this fantasy world?"
+          required
         ></textarea>
-        <br />
-        <button type="submit" style={{ marginTop: "10px" }}>
-          Submit
-        </button>
+        <button type="submit" style={{ marginTop: "10px" }}>Submit</button>
       </form>
     </div>
   );

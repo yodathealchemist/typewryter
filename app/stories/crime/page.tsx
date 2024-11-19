@@ -15,7 +15,7 @@ export default function CrimeStory() {
         <br />
         <textarea
           id="feedback"
-          rows="4"
+          rows={4} // Changed to number
           style={{ width: "100%", marginTop: "10px" }}
           placeholder="What twists and turns should this mystery take?"
         ></textarea>

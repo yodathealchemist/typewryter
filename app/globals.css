@@ -36,10 +36,6 @@ nav {
 }
 
 .footer-link:hover {
-  text-decoration: none;
-}
-
-.footer-link:hover {
   font-weight: bold;
 }
 

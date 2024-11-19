@@ -71,7 +71,6 @@ export default function RootLayout({
             <ul
               style={{
                 display: "flex",
-                backgroundColor: "#f8f9fa",
                 listStyle: "none",
                 padding: 0,
                 margin: 0,

@@ -12,3 +12,22 @@ h1 {
 nav {
   border-bottom: 1px solid #ddd;
 }
+
+.menu-link {
+  font-weight: normal;
+  color: black;
+  text-decoration: none; /* No underline by default */
+}
+
+.menu-link:hover {
+  font-weight: bold; /* Bold when hovered */
+  color: black; /* Keep the color consistent */
+}
+
+.menu-link:visited {
+  color: black; /* Prevent color change after clicking */
+}
+
+.menu-link:active {
+  color: black; /* No color change on active state */
+}

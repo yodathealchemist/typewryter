@@ -9,15 +9,12 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      <p>
-        Welcome to the interactive storytelling platform where your imagination shapes the journey.
-      </p>
 
       {/* Advertisement Placeholder at the top */}
       <div
         style={{
           width: "80%",
-          height: "100px",
+          height: "300px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
@@ -37,6 +34,9 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
+              <p>
+        Welcome to the interactive storytelling platform where your imagination shapes the journey.
+      </p>
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
       <div
         style={{
           width: "80%",
-          height: "100px",
+          height: "300px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",

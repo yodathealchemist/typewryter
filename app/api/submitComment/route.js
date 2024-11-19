@@ -5,7 +5,7 @@ export async function POST(req) {
 
   try {
     // Generate the current timestamp manually
-    const timestamp = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+    const timestamp = new Date().toISOString(); // Format: YYYY-MM-DDTHH:mm:ss.sssZ
 
     // Insert the comment along with the timestamp
     const result = await pool.query(

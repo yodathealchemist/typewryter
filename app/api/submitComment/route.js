@@ -1,4 +1,4 @@
-import pool from '../../../db';
+import pool from '../../../lib/db';
 
 export async function POST(req) {
   const { story, chapter, comment } = await req.json();

@@ -46,8 +46,8 @@ export default function RootLayout({
           {/* Circular Logo */}
           <div
             style={{
-              width: "80px",
-              height: "80px",
+              width: "75px",
+              height: "75px",
               borderRadius: "50%",
               overflow: "hidden",
               display: "flex",
@@ -58,8 +58,8 @@ export default function RootLayout({
             <Image
               src="/logo.webp"
               alt="TypeWryteR Logo"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               style={{ objectFit: "cover" }}
             />
           </div>

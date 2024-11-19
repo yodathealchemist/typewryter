@@ -27,3 +27,34 @@ export default function CrimeStory() {
     </div>
   );
 }
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const comment = e.target.feedback.value;
+
+  const response = await fetch('/api/submitComment', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      story: 'fantasy', // Adjust this for each story
+      chapter: 'chapter1', // Adjust this for each chapter
+      comment,
+    }),
+  });
+
+  if (response.ok) {
+    alert('Your comment has been submitted!');
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
+
+  e.target.reset();
+};
+
+return (
+  <form onSubmit={handleSubmit}>
+    <textarea id="feedback" name="feedback" rows={4} required />
+    <button type="submit">Submit</button>
+  </form>
+);

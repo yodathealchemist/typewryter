@@ -9,28 +9,30 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* Top Advertisement Placeholder */}
+      {/* Top Google Ad */}
       <div
         style={{
           width: "80%",
-          height: "100px",
-          backgroundColor: "#f0f0f0",
-          border: "2px dashed #ccc",
+          height: "auto",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block", width: "100%", maxWidth: "728px", height: "90px" }}
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
+          data-ad-slot="1234567890"
+        ></ins>
       </div>
 
-      {/* Main Content Area with Right Advertisement */}
+      {/* Main Content Area with Right-Side Google Ads */}
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "1fr auto",
-          columnGap: "20px", // Space between content and right ad
+          columnGap: "20px",
           alignItems: "start",
           width: "100%",
           maxWidth: "1000px",
@@ -40,7 +42,7 @@ export default function Home() {
         <div
           style={{
             textAlign: "center",
-            margin: "0 auto", // Center the content in its column
+            margin: "0 auto",
             maxWidth: "600px",
           }}
         >
@@ -52,57 +54,45 @@ export default function Home() {
           <p>Explore stories, contribute, and see how they evolve!</p>
         </div>
 
-        {/* Right Advertisement Placeholder */}
+        {/* Right-Side Google Ads */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "0", // Ensure placeholders touch each other
+            gap: "0",
           }}
         >
-          <div
-            style={{
-              width: "300px",
-              height: "200px",
-              backgroundColor: "#f0f0f0",
-              border: "2px dashed #ccc",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
-          </div>
-          <div
-            style={{
-              width: "300px",
-              height: "200px",
-              backgroundColor: "#f0f0f0",
-              border: "2px dashed #ccc",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
-          </div>
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block", width: "300px", height: "250px" }}
+            data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
+            data-ad-slot="1234567891"
+          ></ins>
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block", width: "300px", height: "250px" }}
+            data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
+            data-ad-slot="1234567892"
+          ></ins>
         </div>
       </div>
 
-      {/* Bottom Advertisement Placeholder */}
+      {/* Bottom Google Ad */}
       <div
         style={{
           width: "80%",
-          height: "300px",
-          backgroundColor: "#f0f0f0",
-          border: "2px dashed #ccc",
+          height: "auto",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block", width: "100%", maxWidth: "728px", height: "90px" }}
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
+          data-ad-slot="1234567893"
+        ></ins>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ export default function Home() {
           alignItems: "center", // Align vertically
           justifyContent: "center", // Center the grid horizontally
           width: "100%",
-          maxWidth: "1000px",
+    //      maxWidth: "1000px",
         }}
       >
         {/* Left Placeholder (Empty, Same Size as Right Ads) */}

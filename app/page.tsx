@@ -41,7 +41,7 @@ export default function Home() {
             flex: 1,
             maxWidth: "600px",
             margin: "20px",
-            textAlign: "left",
+            textAlign: "center",
           }}
         >
           <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
@@ -62,7 +62,6 @@ export default function Home() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "20px",
           }}
         >
           <p style={{ color: "#999" }}>Advertisement Placeholder</p>

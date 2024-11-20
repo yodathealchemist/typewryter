@@ -19,7 +19,6 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "20px 0",
         }}
       >
         <p style={{ color: "#999" }}>Advertisement Placeholder</p>
@@ -40,7 +39,6 @@ export default function Home() {
           style={{
             flex: 1,
             maxWidth: "600px",
-            margin: "20px",
             textAlign: "center",
           }}
         >

@@ -11,11 +11,11 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* Top Google Ad */}
+      {/* Top Google Ad (728x90 Leaderboard) */}
       <div
         style={{
-          width: "80%",
-          height: "100px",
+          width: "728px",
+          height: "90px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
@@ -24,7 +24,7 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
       {/* Main Content Area with Right-Side Google Ads */}
@@ -54,7 +54,7 @@ export default function Home() {
           <p>Explore stories, contribute, and see how they evolve!</p>
         </div>
 
-        {/* Right-Side Google Ads */}
+        {/* Right-Side Google Ads (2x 300x250 Medium Rectangles) */}
         <div
           style={{
             display: "flex",
@@ -73,7 +73,7 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+            <p style={{ color: "#999" }}>300x250 Ad Placeholder</p>
           </div>
           <div
             style={{
@@ -86,16 +86,16 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+            <p style={{ color: "#999" }}>300x250 Ad Placeholder</p>
           </div>
         </div>
       </div>
 
-      {/* Bottom Google Ad */}
+      {/* Bottom Google Ad (728x90 Leaderboard) */}
       <div
         style={{
-          width: "80%",
-          height: "300px",
+          width: "728px",
+          height: "90px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
@@ -104,7 +104,7 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
     </div>
   );

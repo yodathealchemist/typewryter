@@ -9,7 +9,7 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-
+      
       {/* Main content area */}
       <div
         style={{

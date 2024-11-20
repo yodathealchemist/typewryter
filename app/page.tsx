@@ -19,17 +19,19 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          margin: "20px 0",
         }}
       >
         <p style={{ color: "#999" }}>Advertisement Placeholder</p>
       </div>
 
-      {/* Main content area with right-side advertisement */}
+      {/* Main Content Area with Right Advertisement */}
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
+          display: "grid",
+          gridTemplateColumns: "1fr auto",
+          columnGap: "20px", // Space between content and right ad
+          alignItems: "start",
           width: "100%",
           maxWidth: "1000px",
         }}
@@ -37,9 +39,9 @@ export default function Home() {
         {/* Main Content */}
         <div
           style={{
-            flex: 1,
-            maxWidth: "600px",
             textAlign: "center",
+            margin: "0 auto", // Center the content in its column
+            maxWidth: "600px",
           }}
         >
           <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
@@ -53,16 +55,37 @@ export default function Home() {
         {/* Right Advertisement Placeholder */}
         <div
           style={{
-            width: "300px",
-            height: "400px",
-            backgroundColor: "#f0f0f0",
-            border: "2px dashed #ccc",
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            flexDirection: "column",
+            gap: "0", // Ensure placeholders touch each other
           }}
         >
-          <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+          <div
+            style={{
+              width: "300px",
+              height: "200px",
+              backgroundColor: "#f0f0f0",
+              border: "2px dashed #ccc",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+          </div>
+          <div
+            style={{
+              width: "300px",
+              height: "200px",
+              backgroundColor: "#f0f0f0",
+              border: "2px dashed #ccc",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+          </div>
         </div>
       </div>
 

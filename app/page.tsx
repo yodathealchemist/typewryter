@@ -99,11 +99,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Bottom Google Ad (728x90 Leaderboard) */}
+      {/* Bottom Google Ad (970x250 Billboard) */}
       <div
         style={{
-          width: "728px",
-          height: "90px",
+          width: "970px",
+          height: "250px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
@@ -112,7 +112,7 @@ export default function Home() {
           margin: "20px 0",
         }}
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
       </div>
     </div>
   );

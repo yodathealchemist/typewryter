@@ -4,7 +4,9 @@ export default function Home() {
       style={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        justifyContent: "center", // Center content vertically
+        alignItems: "center", // Center content horizontally
+        minHeight: "100vh", // Full height of the viewport
         padding: "40px",
         textAlign: "center",
       }}
@@ -13,27 +15,26 @@ export default function Home() {
       <div
         style={{
           width: "80%",
-          height: "auto",
+          height: "100px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           margin: "20px 0",
         }}
       >
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block", width: "100%", maxWidth: "728px", height: "90px" }}
-          data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
-          data-ad-slot="1234567890"
-        ></ins>
+        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
       </div>
 
       {/* Main Content Area with Right-Side Google Ads */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr auto",
-          columnGap: "20px",
-          alignItems: "start",
+          gridTemplateColumns: "1fr auto", // Main content and ad
+          columnGap: "20px", // Space between columns
+          alignItems: "center", // Align vertically
+          justifyContent: "center", // Center the grid horizontally
           width: "100%",
           maxWidth: "1000px",
         }}
@@ -41,9 +42,8 @@ export default function Home() {
         {/* Main Content */}
         <div
           style={{
-            textAlign: "center",
-            margin: "0 auto",
             maxWidth: "600px",
+            margin: "0 auto", // Center main content within its column
           }}
         >
           <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
@@ -59,21 +59,35 @@ export default function Home() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "0",
+            gap: "0", // Remove space between ads to make them touch
           }}
         >
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block", width: "300px", height: "250px" }}
-            data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
-            data-ad-slot="1234567891"
-          ></ins>
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block", width: "300px", height: "250px" }}
-            data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
-            data-ad-slot="1234567892"
-          ></ins>
+          <div
+            style={{
+              width: "300px",
+              height: "250px",
+              backgroundColor: "#f0f0f0",
+              border: "2px dashed #ccc",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+          </div>
+          <div
+            style={{
+              width: "300px",
+              height: "250px",
+              backgroundColor: "#f0f0f0",
+              border: "2px dashed #ccc",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+          </div>
         </div>
       </div>
 
@@ -81,18 +95,16 @@ export default function Home() {
       <div
         style={{
           width: "80%",
-          height: "auto",
+          height: "300px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           margin: "20px 0",
         }}
       >
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block", width: "100%", maxWidth: "728px", height: "90px" }}
-          data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
-          data-ad-slot="1234567893"
-        ></ins>
+        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
       </div>
     </div>
   );

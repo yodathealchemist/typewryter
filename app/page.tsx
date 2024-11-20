@@ -27,11 +27,11 @@ export default function Home() {
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      {/* Main Content Area with Right-Side Google Ads */}
+      {/* Main Content Area with Left and Right Placeholders */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr auto", // Main content and ad
+          gridTemplateColumns: "auto 1fr auto", // Left placeholder, content, right ads
           columnGap: "20px", // Space between columns
           alignItems: "center", // Align vertically
           justifyContent: "center", // Center the grid horizontally
@@ -39,6 +39,14 @@ export default function Home() {
           maxWidth: "1000px",
         }}
       >
+        {/* Left Placeholder (Empty, Same Size as Right Ads) */}
+        <div
+          style={{
+            width: "300px",
+            height: "500px", // Matches the combined height of the right ads
+          }}
+        ></div>
+
         {/* Main Content */}
         <div
           style={{

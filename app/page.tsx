@@ -33,7 +33,7 @@ export default function Home() {
       {/* Main Content in the Center */}
       <div
         style={{
-          maxWidth: "400px",
+          maxWidth: "600px",
           margin: "0 auto",
           zIndex: 1, // Ensure main content stays above ads
         }}
@@ -46,26 +46,6 @@ export default function Home() {
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 
-      {/* Right-Side Ad on Desktop */}
-      <div
-        style={{
-          position: "absolute",
-          right: "20px",
-          top: "50%",
-          transform: "translateY(-50%)", // Vertically center the ad
-          display: "none", // Hidden by default
-          width: "300px",
-          height: "250px",
-          backgroundColor: "#f0f0f0",
-          border: "2px dashed #ccc",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-        className="right-ad"
-      >
-        <p style={{ color: "#999" }}>300x250 Ad Placeholder</p>
-      </div>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

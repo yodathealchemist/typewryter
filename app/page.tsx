@@ -4,134 +4,94 @@ export default function Home() {
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center", // Center content vertically
-        alignItems: "center", // Center content horizontally
-        minHeight: "100vh", // Full height of the viewport
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
         padding: "40px",
         textAlign: "center",
+        position: "relative", // Allow for ad placement
       }}
     >
-      {/* Top Responsive Ad */}
+      {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
         style={{
           width: "100%",
           maxWidth: "728px",
-          height: "auto", // Allow flexible height
+          height: "90px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "20px 0",
+          marginBottom: "20px",
         }}
+        className="top-ad"
       >
-        <p style={{ color: "#999" }}>Responsive Ad Placeholder</p>
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      {/* Main Content Area */}
+      {/* Main Content in the Center */}
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "auto 1fr auto", // Left placeholder, content, right ads
-          columnGap: "20px",
-          alignItems: "start",
-          justifyContent: "center",
-          width: "100%",
-          maxWidth: "1000px",
+          maxWidth: "600px",
+          margin: "0 auto",
+          zIndex: 1, // Ensure main content stays above ads
         }}
       >
-        {/* Left Placeholder */}
-        <div
-          style={{
-            display: "none", // Hide on small screens
-          }}
-          className="ad-placeholder"
-        ></div>
-
-        {/* Main Content */}
-        <div
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto",
-          }}
-        >
-          <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
-          <h2 style={{ fontSize: "2rem" }}>interactive storytelling platform</h2>
-          <h3 style={{ fontSize: "1.5rem" }}>
-            where your imagination shapes the journey.
-          </h3>
-          <p>Explore stories, contribute, and see how they evolve!</p>
-        </div>
-
-        {/* Right-Side Responsive Ads */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "10px",
-            width: "300px",
-          }}
-          className="right-ads"
-        >
-          <div
-            style={{
-              width: "100%",
-              height: "auto", // Allow flexible height
-              aspectRatio: "4 / 3", // Maintain a 4:3 ratio
-              backgroundColor: "#f0f0f0",
-              border: "2px dashed #ccc",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <p style={{ color: "#999" }}>Responsive Ad Placeholder</p>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              height: "auto", // Allow flexible height
-              aspectRatio: "4 / 3",
-              backgroundColor: "#f0f0f0",
-              border: "2px dashed #ccc",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <p style={{ color: "#999" }}>Responsive Ad Placeholder</p>
-          </div>
-        </div>
+        <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
+        <h2 style={{ fontSize: "2rem" }}>interactive storytelling platform</h2>
+        <h3 style={{ fontSize: "1.5rem" }}>
+          where your imagination shapes the journey.
+        </h3>
+        <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 
-      {/* Bottom Responsive Ad */}
+      {/* Right-Side Ad on Desktop */}
+      <div
+        style={{
+          position: "absolute",
+          right: "20px",
+          top: "50%",
+          transform: "translateY(-50%)", // Vertically center the ad
+          display: "none", // Hidden by default
+          width: "300px",
+          height: "250px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+        className="right-ad"
+      >
+        <p style={{ color: "#999" }}>300x250 Ad Placeholder</p>
+      </div>
+
+      {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{
           width: "100%",
           maxWidth: "970px",
-          height: "auto", // Allow flexible height
-          aspectRatio: "970 / 250", // Maintain 970x250 Billboard proportions
+          height: "250px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "20px 0",
+          marginTop: "20px",
         }}
+        className="bottom-ad"
       >
-        <p style={{ color: "#999" }}>Responsive Ad Placeholder</p>
+        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
       </div>
 
       {/* Add Responsive Styling */}
       <style>
         {`
-          @media (max-width: 768px) {
-            .right-ads {
-              display: none; /* Hide right ads on small screens */
+          @media (min-width: 768px) {
+            .right-ad {
+              display: flex; /* Show right ad on larger screens */
             }
-          }
-          .ad-placeholder {
-            display: block;
           }
         `}
       </style>

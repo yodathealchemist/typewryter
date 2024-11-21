@@ -33,7 +33,7 @@ export default function Home() {
       {/* Main Content in the Center */}
       <div
         style={{
-          maxWidth: "600px",
+          maxWidth: "400px",
           margin: "0 auto",
           zIndex: 1, // Ensure main content stays above ads
         }}

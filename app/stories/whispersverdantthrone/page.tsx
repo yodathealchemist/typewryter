@@ -2,7 +2,7 @@
 
 import FeedbackForm from "@/lib/FeedbackForm";
 
-export default function FantasyStory() {
+export default function Story() {
   return (
     <div
       style={{

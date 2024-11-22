@@ -13,24 +13,29 @@ export default function CrimeStory() {
         textAlign: "center",
       }}
     >
-      <h1>The Clockmaker&apos;s Curse</h1>
-
-      {/* Advertisement Placeholder */}
+      
+      {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
         style={{
-          width: "80%",
-          height: "200px",
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "20px 0",
+          marginBottom: "20px",
         }}
+        className="top-ad"
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
-      {/* Main Content in the Center */}
+      
+      <h1>The Clockmaker&apos;s Curse</h1>
+
+      
+      {/* Main Content */}
       <div
         style={{
           maxWidth: "800px",
@@ -45,20 +50,22 @@ export default function CrimeStory() {
       {/* Include Feedback Form */}
       <FeedbackForm story="crime1" chapter="chapter0" />
 
-      {/* Advertisement Placeholder */}
+      {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{
-          width: "80%",
-          height: "400px",
+          width: "100%",
+          maxWidth: "970px",
+          height: "250px",
           backgroundColor: "#f0f0f0",
           border: "2px dashed #ccc",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "20px 0",
+          marginTop: "20px",
         }}
+        className="bottom-ad"
       >
-        <p style={{ color: "#999" }}>Advertisement Placeholder</p>
+        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
       </div>
     </div>
   );

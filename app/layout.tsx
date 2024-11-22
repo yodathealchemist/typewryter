@@ -126,8 +126,8 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <Link href="/stories/romance" className="link">
-                Romance
+              <Link href="/stories/beneathironskies" className="link">
+                Beneath the Iron Skies
               </Link>
             </li>
           </ul>

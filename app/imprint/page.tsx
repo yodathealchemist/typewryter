@@ -1,9 +1,15 @@
 export default function Imprint() {
   return (
-    <div style={{ padding: "20px" }}>
-
-      
-      <h1>Imprint (Impressum)</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "40px",
+        textAlign: "center",
+        position: "relative", // Allow for ad placement
+      }}
+    >
 
       {/* Ad (Large size, e.g., 970x250) */}
       <div
@@ -23,7 +29,7 @@ export default function Imprint() {
         <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
       </div>
 
-      
+      <h1>Imprint (Impressum)</h1>
       <p><br />Dr. Yuno Rolfes<br />
       Albert-Schweitzer-Str. 22<br />
       32602 Vlotho<br />

@@ -65,7 +65,7 @@ export default function Story() {
       </div>
 
       <h2>List of Chapters</h2>
-      <Link href="/chapter1/page"><b>Chapter 1</b></Link>
+      <Link href="/clockmakerscurse/chapter1/page" className="link"><b>Chapter 1</b></Link>
       
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

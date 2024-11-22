@@ -48,7 +48,7 @@ nav {
   background-color: #f8f9fa; /* Solid white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
   border-radius: 4px; /* Optional rounded corners */
-  max-width: calc(100vw - 20px); /* Limits dropdown width to viewport */
+  max-width: calc(100vw - 20px - var(--dropdown-left, 0px));
   width: auto;
   white-space: nowrap; /* Tries to prevent wrapping */
   overflow-wrap: break-word; /* Allows wrapping when necessary */

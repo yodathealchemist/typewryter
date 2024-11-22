@@ -59,7 +59,7 @@ function Header() {
     >
       <Logo />
       <h1 style={{ margin: "10px 0", fontSize: "2rem", color: "#333" }}>
-        Type_Wryter
+        type_wryter
       </h1>
       <Navigation />
     </header>

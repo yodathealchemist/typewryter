@@ -46,7 +46,7 @@ export default function CrimeStory() {
 <p>The Clockmaker&apos;s Curse is a suspenseful and atmospheric thriller that will keep you turning pages long into the night.</p>
       </div>
       {/* Include Feedback Form */}
-      <FeedbackForm story="crime1" chapter="chapter0" />
+      <FeedbackForm story="1" chapter="0" />
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

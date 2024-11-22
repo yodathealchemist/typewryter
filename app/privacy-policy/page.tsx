@@ -42,7 +42,7 @@ The processing of data through Google AdSense is based on your consent as per Ar
 
 <h3 style={{ fontSize: "1rem" }}>4.2 Opt-Out</h3>
 <p>
-You can manage or withdraw your consent at any time through the cookie settings on our website or by using external tools such as Google's Ads Settings.
+You can manage or withdraw your consent at any time through the cookie settings on our website or by using external tools such as Google&apos;s Ads Settings.
 </p>
 
 <h3 style={{ fontSize: "1rem" }}>4.3 Data Transfer</h3>

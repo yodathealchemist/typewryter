@@ -1,7 +1,5 @@
 "use client";
 
-import FeedbackForm from "@/lib/FeedbackForm";
-
 export default function Story() {
   return (
     <div
@@ -45,9 +43,30 @@ export default function Story() {
 <p>As Amelia delves into her uncle&apos;s belongings, she uncovers cryptic clues that point to a sinister truth buried deep within the town&apos;s history. Secrets long thought forgotten begin to resurface, and powerful forces will do anything to keep them hidden. Caught in a dangerous game of deception and betrayal, Amelia must confront her own fears and uncover the truth before time runs out.</p>
 <p>The Clockmaker&apos;s Curse is a suspenseful and atmospheric thriller that will keep you turning pages long into the night.</p>
       </div>
-      {/* Include Feedback Form */}
-      <FeedbackForm story="1" chapter="0" />
 
+      {/* Top Ad (Standard size, e.g., 728x90) */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+        className="top-ad"
+      >
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+
+      <h2>List of Chapters</h2>
+      <ul>
+      <li>Chapter 1</li>
+      </ul>
+      
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{

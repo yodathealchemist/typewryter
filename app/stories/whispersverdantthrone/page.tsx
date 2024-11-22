@@ -48,7 +48,7 @@ export default function FantasyStory() {
 <p>Whispers of the Verdant Throne is a sweeping fantasy adventure filled with elemental magic, gripping betrayals, and the enduring question: What would you sacrifice to save the world?</p>
       </div>
       {/* Include Feedback Form */}
-      <FeedbackForm story="fantasy1" chapter="chapter0" />
+      <FeedbackForm story="2" chapter="0" />
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

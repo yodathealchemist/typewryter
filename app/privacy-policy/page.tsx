@@ -27,13 +27,13 @@ We do not collect any personal data except as required by the integration of Goo
 <h2 style={{ fontSize: "1.5rem" }}>4. Google AdSense</h2>
 <p>
 This website uses Google AdSense, a service provided by Google LLC, for the display of advertisements. Google AdSense uses cookies and web beacons to show ads based on users' interests. This involves:
+</p>
 <ul>
 <li>Collecting IP addresses.</li>
 <li>Analyzing user interactions with advertisements.</li>
 <li>Using cookies to track your browsing behavior.</li>
 <li>Google's <a href="https://policies.google.com/privacy">Privacy Policy</a>.</li>
 </ul>
-</p>
 
 <h3 style={{ fontSize: "1rem" }}>4.1 Legal Basis</h3>
 <p>
@@ -53,6 +53,7 @@ Google may transfer data to third countries (e.g., the USA). Google complies wit
 <h2 style={{ fontSize: "1.5rem" }}>5. Your Rights</h2>
 <p>
 You have the following rights under the GDPR:
+</p>
 <ul>
 <li>Right of access (Art. 15 GDPR): Obtain information about the data we process about you.</li>
 <li>Right to rectification (Art. 16 GDPR): Correct inaccurate or incomplete data.</li>
@@ -62,7 +63,6 @@ You have the following rights under the GDPR:
 <li>Right to object (Art. 21 GDPR): Withdraw your consent or object to data processing.</li>
 <li>To exercise your rights, contact us (see 2.).</li>
 </ul>
-</p>
 
 <h2 style={{ fontSize: "1.5rem" }}>6. Cookies</h2>
 <p>
@@ -76,7 +76,7 @@ We implement appropriate technical and organizational measures to protect your p
 
 <h2 style={{ fontSize: "1.5rem" }}>8. Updates to This Policy</h2>
 <p>
-We reserve the right to update this privacy policy to reflect changes in legal requirements or our services. The latest version is always available on our website.</p>
+We reserve the right to update this privacy policy to reflect changes in legal requirements or our services. The latest version is always available on our website.
 </p>
 
     </div>

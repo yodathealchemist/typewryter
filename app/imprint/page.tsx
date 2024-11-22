@@ -7,6 +7,7 @@ export default function Imprint() {
       32602 Vlotho<br />
       Germany<br /><br />
       Email: typewryter@gmx.net</p>
+      Phone: +49(0) 5733 / 95371
     </div>
   );
 }

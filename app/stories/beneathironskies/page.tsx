@@ -2,7 +2,7 @@
 
 import FeedbackForm from "@/lib/FeedbackForm";
 
-export default function CrimeStory() {
+export default function RomanceStory() {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ export default function CrimeStory() {
         textAlign: "center",
       }}
     >
-      <h1>The Clockmaker&apos;s Curse</h1>
+      <h1>Beneath the Iron Skies</h1>
       
       {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
@@ -41,12 +41,13 @@ export default function CrimeStory() {
           textAlign: "left",
         }}
       >
-<p>When journalist Amelia Carter returns to the quaint coastal town of Havensbrook, she hopes to quietly settle her late uncle&apos;s estate and leave her past behind. But the town&apos;s iconic clock tower hides more than just its timeless chimes – it holds the key to a mystery that has haunted Havensbrook for decades.</p>
-<p>As Amelia delves into her uncle&apos;s belongings, she uncovers cryptic clues that point to a sinister truth buried deep within the town&apos;s history. Secrets long thought forgotten begin to resurface, and powerful forces will do anything to keep them hidden. Caught in a dangerous game of deception and betrayal, Amelia must confront her own fears and uncover the truth before time runs out.</p>
-<p>The Clockmaker&apos;s Curse is a suspenseful and atmospheric thriller that will keep you turning pages long into the night.</p>
+<p>In a city where the sky is painted with soot and dreams are forged in steel, Clara Fontaine is a mechanic with a vision beyond the clanging factories and endless train tracks. All she wants is freedom – a chance to leave it all behind and craft a future on her own terms.</p>
+<p>Jay Morrow is a pianist hiding from the wreckage of his past, his music echoing through the crumbling railway station where he now plays for strangers. When their worlds collide over the repair of a forgotten piano, neither expects the spark that ignites between them.</p>
+<p>Bound by a shared determination to escape their circumstances, Clara and Jay uncover secrets, confront old wounds, and dare to dream again. But as debts are called and choices must be made, they&apos;ll find themselves at a crossroads: risk it all for freedom and love – or lose everything to the iron skies.</p>
+<p>In this moving tale of resilience, redemption, and romance, Beneath the Iron Skies is a testament to the courage it takes to break free and the beauty that lies in forging a new path – together.</p>
       </div>
       {/* Include Feedback Form */}
-      <FeedbackForm story="crime1" chapter="chapter0" />
+      <FeedbackForm story="romance1" chapter="chapter0" />
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

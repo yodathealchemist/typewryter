@@ -26,13 +26,13 @@ We do not collect any personal data except as required by the integration of Goo
 
 <h2 style={{ fontSize: "1.5rem" }}>4. Google AdSense</h2>
 <p>
-This website uses Google AdSense, a service provided by Google LLC, for the display of advertisements. Google AdSense uses cookies and web beacons to show ads based on users' interests. This involves:
+This website uses Google AdSense, a service provided by Google LLC, for the display of advertisements. Google AdSense uses cookies and web beacons to show ads based on users&apos; interests. This involves:
 </p>
 <ul>
 <li>Collecting IP addresses.</li>
 <li>Analyzing user interactions with advertisements.</li>
 <li>Using cookies to track your browsing behavior.</li>
-<li>Google's <a href="https://policies.google.com/privacy">Privacy Policy</a>.</li>
+<li>Google&apos;s <a href="https://policies.google.com/privacy">Privacy Policy</a>.</li>
 </ul>
 
 <h3 style={{ fontSize: "1rem" }}>4.1 Legal Basis</h3>

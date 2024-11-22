@@ -13,7 +13,7 @@ export default function CrimeStory() {
         textAlign: "center",
       }}
     >
-      <h1>The Clockmaker's Curse</h1>
+      <h1>The Clockmaker’s Curse The Clockmaker&apos;s Curse</h1>
 
       {/* Advertisement Placeholder */}
       <div

@@ -1,15 +1,6 @@
 export default function Imprint() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        padding: "40px",
-        textAlign: "center",
-        position: "relative", // Allow for ad placement
-      }}
-    >
+    <div style={{ padding: "20px" }}>
 
       <h1>Imprint (Impressum)</h1>
       <p><br />Dr. Yuno Rolfes<br />

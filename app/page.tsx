@@ -7,7 +7,6 @@ export default function Home() {
         alignItems: "center",
         padding: "40px",
         textAlign: "center",
-        position: "relative", // Allow for ad placement
       }}
     >
       {/* Top Ad (Standard size, e.g., 728x90) */}
@@ -33,14 +32,11 @@ export default function Home() {
         style={{
           maxWidth: "600px",
           margin: "0 auto",
-          zIndex: 1, // Ensure main content stays above ads
         }}
       >
         <h3 style={{ fontSize: "1.5rem" }}>Welcome to the</h3>
         <h2 style={{ fontSize: "2rem" }}>interactive storytelling platform</h2>
-        <h3 style={{ fontSize: "1.5rem" }}>
-          where your imagination shapes the journey.
-        </h3>
+        <h3 style={{ fontSize: "1.5rem" }}>where your imagination shapes the journey.</h3>
         <p>Explore stories, contribute, and see how they evolve!</p>
       </div>
 

@@ -2,7 +2,7 @@
 
 import FeedbackForm from "@/lib/FeedbackForm";
 
-export default function CrimeStory() {
+export default function Story() {
   return (
     <div
       style={{

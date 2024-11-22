@@ -50,7 +50,8 @@ nav {
   border-radius: 4px; /* Optional rounded corners */
   max-width: calc(100vw - 20px); /* Limits dropdown width to viewport */
   width: auto;
-  white-space: pre-wrap;
+  white-space: nowrap; /* Tries to prevent wrapping */
+  overflow-wrap: break-word; /* Allows wrapping when necessary */
 }
 
 .dropdown:hover .dropdown-content {

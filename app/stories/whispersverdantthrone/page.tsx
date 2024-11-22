@@ -42,9 +42,9 @@ export default function FantasyStory() {
         }}
       >
 <p>A world on the brink of ruin. A throne steeped in secrets. A young woman destined to decide its fate.</p>
-<p>In the magical land of Aeloria, the balance of the five elemental realms is crumbling. Crops fail, storms rage, and the people cry out for salvation. At the heart of the chaos lies the Verdant Throne, a mystical seat of power that once kept harmony across the realms—now silent and forgotten.</p>
-<p>For Ceyla, a quiet herbalist from the village of Bramblehold, destiny comes uninvited. When a glowing spirit reveals her lineage as the last Scion of Verdance, she must embark on a perilous journey to uncover the Throne’s ancient secrets and restore balance to a fractured world.</p>
-<p>Joined by a band of unlikely allies—a fallen warrior, a clumsy mage, a cunning thief, and a stone-hearted giant—Ceyla must traverse the elemental realms, face corrupted magic, and confront the shadowy forces that threaten to consume Aeloria. But as the truth of her ancestor&apos;s betrayal comes to light, Ceyla must make an impossible choice: restore the Throne and save her world, or destroy it forever.</p>
+<p>In the magical land of Aeloria, the balance of the five elemental realms is crumbling. Crops fail, storms rage, and the people cry out for salvation. At the heart of the chaos lies the Verdant Throne, a mystical seat of power that once kept harmony across the realms – now silent and forgotten.</p>
+<p>For Ceyla, a quiet herbalist from the village of Bramblehold, destiny comes uninvited. When a glowing spirit reveals her lineage as the last Scion of Verdance, she must embark on a perilous journey to uncover the Throne&apos;s ancient secrets and restore balance to a fractured world.</p>
+<p>Joined by a band of unlikely allies – a fallen warrior, a clumsy mage, a cunning thief, and a stone-hearted giant – Ceyla must traverse the elemental realms, face corrupted magic, and confront the shadowy forces that threaten to consume Aeloria. But as the truth of her ancestor&apos;s betrayal comes to light, Ceyla must make an impossible choice: restore the Throne and save her world, or destroy it forever.</p>
 <p>Whispers of the Verdant Throne is a sweeping fantasy adventure filled with elemental magic, gripping betrayals, and the enduring question: What would you sacrifice to save the world?</p>
       </div>
       {/* Include Feedback Form */}

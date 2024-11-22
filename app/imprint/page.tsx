@@ -1,9 +1,13 @@
 export default function Imprint() {
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Imprint</h1>
-      <p>Here is the imprint for TypeWryter.</p>
-      {/* Add your imprint details here */}
+      <h1>Imprint/Impressum</h1>
+      <p>Dr. Yuno Rolfes</p>
+      <p>Albert-Schweitzer-Str. 22</p>
+      <p>32602 Vlotho</p>
+      <p>Germany</p>
+      <p>Email: y_1@riseup.net</p>
+      <p>Phone: +49(0) 176 31 26 10 77</p>
     </div>
   );
 }

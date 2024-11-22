@@ -121,8 +121,8 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <Link href="/stories/crime" className="link">
-                Crime
+              <Link href="/stories/clockmakerscurse" className="link">
+                The Clockmaker&apos;s Curse
               </Link>
             </li>
             <li>

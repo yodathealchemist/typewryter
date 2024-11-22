@@ -38,7 +38,8 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: auto;
+  right: auto;
   border: 1px solid #ddd;
   z-index: 1;
   list-style: none;

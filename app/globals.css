@@ -61,10 +61,12 @@ nav {
 }
 
 .dropdown-content li {
-  margin: 5px 0;
+  margin: 3pt 0; /* Adjusted margin for precise spacing */
+  padding: 5px; /* Optional: Add padding for better clickable area */
 }
 
 .dropdown-content li:hover {
   background-color: #f0f0f0; /* Subtle hover effect on items */
-  border-radius: 4px;
+  border-radius: 4px; /* Consistent rounded corners for hover state */
+  transition: background-color 0.2s ease; /* Smooth hover transition */
 }

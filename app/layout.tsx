@@ -171,7 +171,7 @@ function Footer() {
         </li>
         <li>
           <Link href="/imprint" className="link">
-            Imprint
+            Imprint | Privacy Policy | Cookies Policy
           </Link>
         </li>
       </ul>

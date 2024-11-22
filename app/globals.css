@@ -49,8 +49,8 @@ nav {
   border-radius: 4px; /* Optional rounded corners */
 
   /* Handle line breaks and responsiveness */
-  white-space: normal; /* Allow wrapping but no breaking within words */
-  overflow-wrap: break-word; /* Break lines at spaces if necessary */
+  white-space: nowrap;
+  overflow-wrap: break-word;
   word-break: break-word; /* Fallback for older browsers */
   max-width: calc(100vw - var(--dropdown-left, 0px) - 20px); /* Fit dropdown within viewport */
   width: auto;

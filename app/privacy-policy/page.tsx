@@ -21,7 +21,7 @@ If you have questions about this privacy policy or how we handle your data, plea
 
 <h2 style={{ fontSize: "1.5rem" }}>3. Personal Data We Collect</h2>
 <p>
-We do not collect any personal data except as required by the integration of Google AdSense. For details on Google AdSense, see Section 4 below.
+We do not collect any personal data except as required by the integration of Google AdSense.
 </p>
 
 <h2 style={{ fontSize: "1.5rem" }}>4. Google AdSense</h2>

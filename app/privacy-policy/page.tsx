@@ -21,7 +21,7 @@ If you have questions about this privacy policy or how we handle your data, plea
 
 <h2 style={{ fontSize: "1.5rem" }}>3. Personal Data We Collect</h2>
 <p>
-We do not collect any personal data except as required by the integration of Google AdSense. The ideas you send us are collected without any further data except a time stamp, and deleted after being used exclusively to create the next chapter.
+We do not collect any personal data except as required by the integration of Google AdSense. The ideas you send us on how to proceed with a story are collected without any further data except which story and a time stamp, and deleted after being used exclusively to create the next chapter.
 </p>
 
 <h2 style={{ fontSize: "1.5rem" }}>4. Google AdSense</h2>

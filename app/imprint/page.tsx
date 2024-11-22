@@ -11,7 +11,7 @@ export default function Imprint() {
       Email: typewryter@gmx.net<br />
       Phone: +49(0) 5733 / 95371</p>
 
-<h1><br />Privacy Policy</h1>
+<h1><br /><br />Privacy Policy</h1>
 
 <h2 style={{ fontSize: "1.5rem" }}>1. Introduction</h2>
 <p>
@@ -91,7 +91,7 @@ We implement appropriate technical and organizational measures to protect your p
 We reserve the right to update this privacy policy to reflect changes in legal requirements or our services. The latest version is always available on our website.
 </p>
 
-<h1><br />Cookies Policy</h1>
+<h1><br /><br />Cookies Policy</h1>
     </div>
   );
 }

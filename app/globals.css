@@ -49,10 +49,11 @@ nav {
   border-radius: 4px; /* Optional rounded corners */
 
   /* Handle line breaks and responsiveness */
-  white-space: nowrap; /* Prevent line breaks by default */
-  max-width: calc(100vw - var(--dropdown-left, 0px) - 40px); /* Dynamic width adjustment */
-  overflow-wrap: break-word; /* Allow wrapping when content exceeds max-width */
-  width: auto; /* Adjust width to content */
+  white-space: normal; /* Allow wrapping but no breaking within words */
+  overflow-wrap: break-word; /* Break lines at spaces if necessary */
+  word-break: break-word; /* Fallback for older browsers */
+  max-width: calc(100vw - var(--dropdown-left, 0px) - 20px); /* Fit dropdown within viewport */
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .dropdown:hover .dropdown-content {

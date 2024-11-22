@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
 import "./globals.css";
 
 // Fonts
@@ -41,15 +42,6 @@ export default function RootLayout({
         <Header />
         <main style={{ marginTop: "20px" }}>{children}</main>
         <Footer />
-
-  <script>
-    document.querySelector('.dropdown').addEventListener('mouseenter', () => {
-      const dropdown = document.querySelector('.dropdown-content');
-      const rect = dropdown.getBoundingClientRect();
-      dropdown.style.setProperty('--dropdown-left', `${rect.left}px`);
-    });
-  </script>
-        
       </body>
     </html>
   );
@@ -91,7 +83,7 @@ function Logo() {
     >
       <Image
         src="/logo.webp"
-        alt="TypeWryteR Logo"
+        alt="type_wryter Logo"
         width={75}
         height={75}
         style={{ objectFit: "cover" }}
@@ -102,6 +94,27 @@ function Logo() {
 
 // Navigation Component
 function Navigation() {
+  useEffect(() => {
+    const dropdown = document.querySelector(".dropdown-content");
+
+    const updateDropdownPosition = () => {
+      if (!dropdown) return;
+      const rect = dropdown.getBoundingClientRect();
+      dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
+    };
+
+    const dropdownParent = document.querySelector(".dropdown");
+    if (dropdownParent) {
+      dropdownParent.addEventListener("mouseenter", updateDropdownPosition);
+    }
+
+    return () => {
+      if (dropdownParent) {
+        dropdownParent.removeEventListener("mouseenter", updateDropdownPosition);
+      }
+    };
+  }, []);
+
   return (
     <nav>
       <ul
@@ -162,9 +175,9 @@ function Footer() {
         textAlign: "center",
       }}
     >
-          <Link href="/imprint" className="link">
-            <b>Imprint | Privacy Policy | Cookies Policy</b>
-          </Link>
+      <Link href="/imprint" className="link">
+        <b>Imprint | Privacy Policy | Cookies Policy</b>
+      </Link>
     </footer>
   );
 }

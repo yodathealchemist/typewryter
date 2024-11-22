@@ -48,7 +48,7 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
   border-radius: 4px; /* Optional rounded corners */
   max-width: calc(100vw - var(--dropdown-left, 0px) - 40px); /* Fit dropdown within viewport */
-  width: fit-content;
+  width: max-content;
 }
 
 .dropdown:hover .dropdown-content {

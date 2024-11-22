@@ -53,6 +53,7 @@ nav {
   overflow-wrap: break-word; /* Break lines at spaces if necessary */
   word-break: break-word; /* Fallback for older browsers */
   max-width: calc(100vw - var(--dropdown-left, 0px) - 20px); /* Fit dropdown within viewport */
+  width: auto;
   overflow: hidden; /* Prevent content from overflowing */
 }
 

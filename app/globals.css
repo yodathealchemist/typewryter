@@ -36,6 +36,7 @@ nav {
 
 .dropdown-content {
   display: none;
+  position: absolute;
   top: 100%;
   left: 0;
   border: 1px solid #ddd;
@@ -46,6 +47,7 @@ nav {
   background-color: #f8f9fa; /* Solid white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
   border-radius: 4px; /* Optional rounded corners */
+  width: auto;
 }
 
 .dropdown:hover .dropdown-content {

@@ -50,7 +50,7 @@ nav {
 
   /* Handle line breaks and responsiveness */
   white-space: nowrap; /* Prevent line breaks by default */
-  max-width: calc(100vw - 20px); /* Ensure dropdown fits within viewport */
+  max-width: calc(100vw - var(--dropdown-left, 0px) - 20px); /* Dynamic width adjustment */
   overflow-wrap: break-word; /* Allow wrapping when content exceeds max-width */
   width: auto; /* Adjust width to content */
 }

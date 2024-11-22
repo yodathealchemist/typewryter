@@ -5,8 +5,6 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
         padding: "40px",
         textAlign: "center",
         position: "relative", // Allow for ad placement
@@ -64,17 +62,7 @@ export default function Home() {
       >
         <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
       </div>
-
-      {/* Add Responsive Styling */}
-      <style>
-        {`
-          @media (min-width: 768px) {
-            .right-ad {
-              display: flex; /* Show right ad on larger screens */
-            }
-          }
-        `}
-      </style>
+      
     </div>
   );
 }

@@ -153,28 +153,9 @@ function Footer() {
         textAlign: "center",
       }}
     >
-      <ul
-        style={{
-          listStyle: "none",
-          padding: 0,
-          margin: 0,
-          display: "flex",
-          justifyContent: "center",
-          gap: "15px",
-          fontSize: "0.9rem",
-        }}
-      >
-        <li>
-          <Link href="/privacy-policy" className="link">
-            Privacy Policy
-          </Link>
-        </li>
-        <li>
           <Link href="/imprint" className="link">
             Imprint | Privacy Policy | Cookies Policy
           </Link>
-        </li>
-      </ul>
     </footer>
   );
 }

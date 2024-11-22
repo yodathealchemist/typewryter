@@ -13,6 +13,7 @@ export default function CrimeStory() {
         textAlign: "center",
       }}
     >
+      <h1>The Clockmaker&apos;s Curse</h1>
       
       {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
@@ -31,10 +32,7 @@ export default function CrimeStory() {
       >
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
-      
-      <h1>The Clockmaker&apos;s Curse</h1>
-
-      
+         
       {/* Main Content */}
       <div
         style={{

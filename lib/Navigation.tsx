@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   useEffect(() => {
-    const dropdown = document.querySelector(".dropdown-content");
+    const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
 
     const updateDropdownPosition = () => {
       if (!dropdown) return;

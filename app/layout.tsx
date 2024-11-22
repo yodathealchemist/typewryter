@@ -116,13 +116,13 @@ function Navigation() {
           </div>
           <ul className="dropdown-content">
             <li>
-              <Link href="/stories/fantasy" className="link">
-                Fantasy
+              <Link href="/stories/clockmakerscurse" className="link">
+                The Clockmaker&apos;s Curse
               </Link>
             </li>
             <li>
-              <Link href="/stories/clockmakerscurse" className="link">
-                The Clockmaker&apos;s Curse
+              <Link href="/stories/whispersverdantthrone" className="link">
+                Whispers of the Verdant Throne
               </Link>
             </li>
             <li>

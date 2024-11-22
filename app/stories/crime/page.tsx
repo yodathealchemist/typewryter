@@ -13,7 +13,7 @@ export default function CrimeStory() {
         textAlign: "center",
       }}
     >
-      <h1>The Clockmaker’s Curse The Clockmaker&apos;s Curse</h1>
+      <h1>The Clockmaker&apos;s Curse</h1>
 
       {/* Advertisement Placeholder */}
       <div
@@ -30,13 +30,20 @@ export default function CrimeStory() {
       >
         <p style={{ color: "#999" }}>Advertisement Placeholder</p>
       </div>
-
-<p>When journalist Amelia Carter returns to the quaint coastal town of Havensbrook, she hopes to quietly settle her late uncle’s estate and leave her past behind. But the town’s iconic clock tower hides more than just its timeless chimes—it holds the key to a mystery that has haunted Havensbrook for decades.</p>
-<p>As Amelia delves into her uncle’s belongings, she uncovers cryptic clues that point to a sinister truth buried deep within the town’s history. Secrets long thought forgotten begin to resurface, and powerful forces will do anything to keep them hidden. Caught in a dangerous game of deception and betrayal, Amelia must confront her own fears and uncover the truth before time runs out.</p>
-<p>The Clockmaker’s Curse is a suspenseful and atmospheric thriller that will keep you turning pages long into the night.</p>
-
+      {/* Main Content in the Center */}
+      <div
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+          textAlign: "left",
+        }}
+      >
+<p>When journalist Amelia Carter returns to the quaint coastal town of Havensbrook, she hopes to quietly settle her late uncle&apos;s estate and leave her past behind. But the town&apos;s iconic clock tower hides more than just its timeless chimes – it holds the key to a mystery that has haunted Havensbrook for decades.</p>
+<p>As Amelia delves into her uncle&apos;s belongings, she uncovers cryptic clues that point to a sinister truth buried deep within the town&apos;s history. Secrets long thought forgotten begin to resurface, and powerful forces will do anything to keep them hidden. Caught in a dangerous game of deception and betrayal, Amelia must confront her own fears and uncover the truth before time runs out.</p>
+<p>The Clockmaker&apos;s Curse is a suspenseful and atmospheric thriller that will keep you turning pages long into the night.</p>
+      </div>
       {/* Include Feedback Form */}
-      <FeedbackForm story="crime" chapter="chapter0" />
+      <FeedbackForm story="crime1" chapter="chapter0" />
 
       {/* Advertisement Placeholder */}
       <div

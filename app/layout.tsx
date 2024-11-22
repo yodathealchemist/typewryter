@@ -41,6 +41,15 @@ export default function RootLayout({
         <Header />
         <main style={{ marginTop: "20px" }}>{children}</main>
         <Footer />
+
+  <script>
+    document.querySelector('.dropdown').addEventListener('mouseenter', () => {
+      const dropdown = document.querySelector('.dropdown-content');
+      const rect = dropdown.getBoundingClientRect();
+      dropdown.style.setProperty('--dropdown-left', `${rect.left}px`);
+    });
+  </script>
+        
       </body>
     </html>
   );

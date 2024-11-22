@@ -49,7 +49,7 @@ nav {
   border-radius: 4px; /* Optional rounded corners */
 
   /* Handle line breaks and responsiveness */
-  white-space: nowrap;
+  white-space: pre-wrap;
   overflow-wrap: normal;
   word-break: normal; /* Fallback for older browsers */
   max-width: calc(100vw - var(--dropdown-left, 0px) - 40px); /* Fit dropdown within viewport */

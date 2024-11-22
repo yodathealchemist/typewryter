@@ -106,6 +106,8 @@ function Footer() {
       <Link href="/imprint" className="link">
         <b>Imprint | Privacy Policy | Cookies Policy</b>
       </Link>
+      <br />
+      2024
     </footer>
   );
 }

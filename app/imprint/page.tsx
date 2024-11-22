@@ -8,8 +8,7 @@ export default function Imprint() {
       <p>32602 Vlotho</p>
       <p>Germany</p>
       <p></p>
-      <p>Email: y_1@riseup.net</p>
-      <p>Phone: +49(0) 176 31 26 10 77</p>
+      <p>Email: typewryter@gmx.net</p>
     </div>
   );
 }

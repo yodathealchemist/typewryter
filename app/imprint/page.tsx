@@ -6,8 +6,8 @@ export default function Imprint() {
       Albert-Schweitzer-Str. 22<br />
       32602 Vlotho<br />
       Germany<br /><br />
-      Email: typewryter@gmx.net</p>
-      Phone: +49(0) 5733 / 95371
+      Email: typewryter@gmx.net<br />
+      Phone: +49(0) 5733 / 95371</p>
     </div>
   );
 }

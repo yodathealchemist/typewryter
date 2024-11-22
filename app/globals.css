@@ -48,8 +48,9 @@ nav {
   background-color: #f8f9fa; /* Solid white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
   border-radius: 4px; /* Optional rounded corners */
-  max-width: 600px;
+  max-width: calc(100vw - 20px); /* Limits dropdown width to viewport */
   width: auto;
+  white-space: pre-wrap;
 }
 
 .dropdown:hover .dropdown-content {

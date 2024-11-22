@@ -154,7 +154,7 @@ function Footer() {
       }}
     >
           <Link href="/imprint" className="link">
-            Imprint | Privacy Policy | Cookies Policy
+            <b>Imprint | Privacy Policy | Cookies Policy</b>
           </Link>
     </footer>
   );

@@ -38,8 +38,7 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  left: auto;
-  right: auto;
+  left: 0; /* Align dropdown to the left of the parent */
   border: 1px solid #ddd;
   z-index: 1;
   list-style: none;
@@ -48,10 +47,12 @@ nav {
   background-color: #f8f9fa; /* Solid white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
   border-radius: 4px; /* Optional rounded corners */
-  max-width: calc(100vw - 20px - var(--dropdown-left, 0px));
-  width: auto;
-  white-space: nowrap; /* Tries to prevent wrapping */
-  overflow-wrap: break-word; /* Allows wrapping when necessary */
+
+  /* Handle line breaks and responsiveness */
+  white-space: nowrap; /* Prevent line breaks by default */
+  max-width: calc(100vw - 20px); /* Ensure dropdown fits within viewport */
+  overflow-wrap: break-word; /* Allow wrapping when content exceeds max-width */
+  width: auto; /* Adjust width to content */
 }
 
 .dropdown:hover .dropdown-content {

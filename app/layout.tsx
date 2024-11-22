@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 // Metadata
 export const metadata: Metadata = {
-  title: "Type_Wryter",
+  title: "type_wryter",
   description: "Interactive storytelling platform.",
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Type_Wryter</title>
+        <title>type_wryter</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

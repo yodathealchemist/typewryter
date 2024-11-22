@@ -21,7 +21,7 @@ If you have questions about this privacy policy or how we handle your data, plea
 
 <h2 style={{ fontSize: "1.5rem" }}>3. Personal Data We Collect</h2>
 <p>
-We do not collect any personal data except as required by the integration of Google AdSense.
+We do not collect any personal data except as required by the integration of Google AdSense. The ideas you send us are collected without any further data except a time stamp, and deleted after being used exclusively to create the next chapter.
 </p>
 
 <h2 style={{ fontSize: "1.5rem" }}>4. Google AdSense</h2>
@@ -61,8 +61,10 @@ You have the following rights under the GDPR:
 <li>Right to restrict processing (Art. 18 GDPR): Limit how we process your data.</li>
 <li>Right to data portability (Art. 20 GDPR): Receive your data in a machine-readable format.</li>
 <li>Right to object (Art. 21 GDPR): Withdraw your consent or object to data processing.</li>
-<li>To exercise your rights, contact us (see 2.).</li>
 </ul>
+<p>
+To exercise your rights, please contact us.
+</p>
 
 <h2 style={{ fontSize: "1.5rem" }}>6. Cookies</h2>
 <p>

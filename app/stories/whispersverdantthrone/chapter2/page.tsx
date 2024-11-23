@@ -275,6 +275,9 @@ export default function Story() {
       What kind of ally – or adversary – should she encounter next?<br />
       What secrets might the forest reveal as she ventures deeper?</p>
       <p>Comment below to help guide the story’s next chapter. Aeloria’s fate rests in your hands!</p>
+
+      </div>
+      
       {/* Include Feedback Form */}
       <FeedbackForm story="2" chapter="2" />
 

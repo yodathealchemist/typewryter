@@ -9,22 +9,6 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* Top Ad */}
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "728px",
-          height: "90px",
-          backgroundColor: "#f0f0f0",
-          border: "2px dashed #ccc",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginBottom: "20px",
-        }}
-      >
-        <p style={{ color: "#666", margin: 0 }}>728x90 Ad Placeholder</p>
-      </div>
 
       {/* Image */}
       <div

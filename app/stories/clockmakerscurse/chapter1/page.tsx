@@ -111,15 +111,15 @@ export default function Story() {
 <p>Amelia nodded, falling into step beside him as they walked toward the parking lot. The gravel crunched under their feet, the sound sharp in the quiet. The station loomed behind them, its lights flickering faintly, but Amelia kept her gaze forward, focusing on the path ahead. The clock tower was still there, a presence she couldn’t quite shake, but for now, she was moving forward, one step at a time.</p>
         
       </div>
-      ————————————————
-      <Link href="/stories/clockmakerscurse" className="link">
-        Overview
-      </Link> 
-      ————————————————
+      ———————————
       <Link href="/stories/clockmakerscurse/chapter2" className="link">
         Next Chapter
       </Link>
-      ————————————————
+      ———————————
+      <Link href="/stories/clockmakerscurse" className="link">
+        Overview
+      </Link> 
+      ———————————
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{

@@ -43,7 +43,7 @@ export default function Story() {
       >
         <img
           src="/verdantthrone.webp"
-          alt="Havensbrook’s Clocktower at dawn."
+          alt="The verdant throne"
           style={{
             width: "100%",
             height: "auto",

@@ -13,15 +13,40 @@ export default function Navigation() {
       dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
+    const closeDropdown = () => {
+      if (dropdown) {
+        dropdown.style.display = "none";
+      }
+    };
+
+    const openDropdown = () => {
+      if (dropdown) {
+        dropdown.style.display = "block";
+      }
+    };
+
     const dropdownParent = document.querySelector(".dropdown");
+
     if (dropdownParent) {
-      dropdownParent.addEventListener("mouseenter", updateDropdownPosition);
+      dropdownParent.addEventListener("mouseenter", openDropdown);
+      dropdownParent.addEventListener("mouseleave", closeDropdown);
+      dropdownParent.addEventListener("click", closeDropdown); // Close on item click
     }
+
+    // Ensure dropdown closes on touch devices
+    dropdown?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeDropdown);
+    });
 
     return () => {
       if (dropdownParent) {
-        dropdownParent.removeEventListener("mouseenter", updateDropdownPosition);
+        dropdownParent.removeEventListener("mouseenter", openDropdown);
+        dropdownParent.removeEventListener("mouseleave", closeDropdown);
+        dropdownParent.removeEventListener("click", closeDropdown);
       }
+      dropdown?.querySelectorAll("a").forEach((link) => {
+        link.removeEventListener("click", closeDropdown);
+      });
     };
   }, []);
 

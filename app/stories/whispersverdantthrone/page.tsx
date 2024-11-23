@@ -13,8 +13,6 @@ export default function Story() {
         textAlign: "center",
       }}
     >
-      <h1>Whispers of the Verdant Throne</h1>
-      
       {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
         style={{
@@ -31,6 +29,28 @@ export default function Story() {
         className="top-ad"
       >
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+      
+      <h1>Whispers of the Verdant Throne</h1>
+      
+      {/* Image */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "800px", // Maximum container width for the image
+          marginBottom: "20px",
+        }}
+      >
+        <img
+          src="/verdantthrone.webp"
+          alt="Havensbrook’s Clocktower at dawn."
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            aspectRatio: "16 / 9", // Optional: explicitly enforce aspect ratio
+          }}
+        />
       </div>
          
       {/* Main Content */}

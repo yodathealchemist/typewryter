@@ -39,7 +39,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2>Chapter 2: </h2>
+<h2>Chapter 3: </h2>
 
         
 

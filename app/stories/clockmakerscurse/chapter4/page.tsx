@@ -116,7 +116,7 @@ export default function Story() {
       </Link> 
       ———————————
       <Link href="/stories/clockmakerscurse/chapter3" className="link">
-        Last Chapter
+        Previous Chapter
       </Link>
       ———————————
 

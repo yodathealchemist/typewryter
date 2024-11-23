@@ -206,6 +206,26 @@ export default function Story() {
         
       </div>
 
+
+      {/* Ad (Standard size, e.g., 728x90) */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+        className="top-ad"
+      >
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+
+      
       <div
         style={{
           maxWidth: "600px",

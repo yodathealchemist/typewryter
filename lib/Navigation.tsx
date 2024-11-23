@@ -1,60 +1,39 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
 
-    // Function to update dropdown position
     const updateDropdownPosition = () => {
       if (!dropdown) return;
       const rect = dropdown.getBoundingClientRect();
       dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
-    // Function to close the dropdown
-    const closeDropdown = () => {
-      if (dropdown) {
-        dropdown.style.display = "none";
+    const closeDropdown = () => setIsOpen(false);
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!(event.target as HTMLElement).closest(".dropdown")) {
+        closeDropdown();
       }
     };
 
-    // Function to open the dropdown
-    const openDropdown = () => {
-      if (dropdown) {
-        dropdown.style.display = "block";
-      }
-    };
-
-    const dropdownParent = document.querySelector(".dropdown");
-
-    if (dropdownParent) {
-      // Handle dropdown open/close on hover
-      dropdownParent.addEventListener("mouseenter", () => {
-        updateDropdownPosition();
-        openDropdown();
-      });
-      dropdownParent.addEventListener("mouseleave", closeDropdown);
-
-      // Handle dropdown close on item click
-      dropdown.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", closeDropdown);
-      });
+    if (isOpen) {
+      updateDropdownPosition();
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
     }
 
     return () => {
-      if (dropdownParent) {
-        dropdownParent.removeEventListener("mouseenter", openDropdown);
-        dropdownParent.removeEventListener("mouseleave", closeDropdown);
-
-        dropdown.querySelectorAll("a").forEach((link) => {
-          link.removeEventListener("click", closeDropdown);
-        });
-      }
+      document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <nav>
@@ -74,10 +53,21 @@ export default function Navigation() {
           </Link>
         </li>
         <li className="dropdown">
-          <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
+          <div
+            className="link dropdown-toggle"
+            style={{ cursor: "pointer" }}
+            onClick={() => setIsOpen((prev) => !prev)}
+          >
             Stories ▼
           </div>
-          <ul className="dropdown-content">
+          <ul
+            className={`dropdown-content ${isOpen ? "visible" : ""}`}
+            style={{
+              visibility: isOpen ? "visible" : "hidden",
+              opacity: isOpen ? 1 : 0,
+              transition: "opacity 0.2s ease, visibility 0.2s ease",
+            }}
+          >
             <li>
               <Link href="/stories/clockmakerscurse" className="link">
                 The Clockmaker&apos;s Curse

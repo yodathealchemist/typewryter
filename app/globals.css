@@ -1,35 +1,81 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #DBDBDB;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  background-color: #dbdbdb;
   color: #333;
+  line-height: 1.5;
 }
 
-h1 {
-  color: #222;
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Logo Styles */
+.logo-container {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+footer .link {
+  font-weight: bold;
+}
+
+/* Navigation Styles */
 nav {
   border-bottom: 1px solid #ddd;
 }
 
-/* Menu link styles */
+/* Menu Link Styles */
 .link {
   font-weight: normal;
   color: #333;
-  text-decoration: none; /* Remove underlines */
-  transition: font-weight 0.2s ease; /* Smooth transition for hover effect */
+  text-decoration: none;
+  transition: font-weight 0.2s ease;
 }
 
 .link:hover {
-  font-weight: bold; /* Bold on hover */
+  font-weight: bold;
 }
 
 .link:visited,
 .link:active {
-  color: #333; /* Prevent color change after click */
+  color: #333;
 }
 
+/* Dropdown Styles */
 .dropdown {
   position: relative;
 }
@@ -38,16 +84,16 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0; /* Align dropdown to the left of the parent */
+  left: 0;
   border: 1px solid #ddd;
   z-index: 1;
   list-style: none;
   padding: 10px;
   margin: 0;
-  background-color: #f8f9fa; /* Solid white background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
-  border-radius: 4px; /* Optional rounded corners */
-  max-width: calc(100vw - var(--dropdown-left, 0px) - 40px); /* Fit dropdown within viewport */
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  max-width: calc(100vw - var(--dropdown-left, 0px) - 40px);
   width: max-content;
 }
 
@@ -56,12 +102,12 @@ nav {
 }
 
 .dropdown-content li {
-  margin: 3pt 0; /* Adjusted margin for precise spacing */
-  padding: 5px; /* Optional: Add padding for better clickable area */
+  margin: 3pt 0;
+  padding: 5px;
 }
 
 .dropdown-content li:hover {
-  background-color: #f0f0f0; /* Subtle hover effect on items */
-  border-radius: 4px; /* Consistent rounded corners for hover state */
-  transition: background-color 0.2s ease; /* Smooth hover transition */
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }

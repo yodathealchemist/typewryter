@@ -14,7 +14,7 @@ export default function Home() {
       <div
         style={{
           width: "100%",
-          maxWidth: "900px", // Maximum container width for the image
+          maxWidth: "800px", // Maximum container width for the image
           marginBottom: "20px",
         }}
       >

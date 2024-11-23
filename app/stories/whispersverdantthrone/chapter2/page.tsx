@@ -239,13 +239,29 @@ export default function Story() {
 <p>The fox paused at the edge of the trees, turning to look at her one last time. “You are not alone, Ceyla,” it said. “The land is with you. Always.”</p>
 <p>With a final glance back at Bramblehold, Ceyla stepped into the forest. The shadows closed around her, cool and welcoming, and the air seemed to hum with the faint, rhythmic pulse of life. Her journey had begun.</p>
 
-
-
-        
-
         
       </div>
 
+
+      {/* Ad (Standard size, e.g., 728x90) */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+        className="top-ad"
+      >
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+
+      
       <div
         style={{
           maxWidth: "600px",

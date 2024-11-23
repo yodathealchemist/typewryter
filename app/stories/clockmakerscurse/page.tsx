@@ -42,7 +42,7 @@ export default function Story() {
         }}
       >
         <img
-          src="/clockmakerscurse.png"
+          src="/clockmakerscurse.webp"
           alt="Havensbrook’s Clocktower at dawn."
           style={{
             width: "100%",

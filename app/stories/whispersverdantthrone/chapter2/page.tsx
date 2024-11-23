@@ -245,17 +245,20 @@ export default function Story() {
 
         
       </div>
-    <h3>What Happens Next?</h3>
-    <p>The journey to the Verdant Throne has begun, but the path ahead is uncertain. Ceyla must face the growing imbalance in the land, forge alliances, and uncover the secrets of her lineage. What challenges should she encounter first? How should her connection to the land and its magic evolve? And who – or what – might stand in her way?</p>
 
-    <p>Your input shapes the next steps of Ceyla’s journey. Share your thoughts:</p>
-    <ul>
-        <li>Should Ceyla’s first trial in the forest test her connection to nature, her courage, or her newfound powers?</li>
-        <li>What kind of ally – or adversary – should she encounter next?</li>
-        <li>What secrets might the forest reveal as she ventures deeper?</li>
-    </ul>
-
-    <p>Comment below to help guide the story’s next chapter. Aeloria’s fate rests in your hands!</p>
+      <div
+        style={{
+          maxWidth: "600px",
+          margin: "0 auto",
+        }}
+      >
+      <h3>What Happens Next?</h3>
+      <p>The journey to the Verdant Throne has begun, but the path ahead is uncertain. Ceyla must face the growing imbalance in the land, forge alliances, and uncover the secrets of her lineage. What challenges should she encounter first? How should her connection to the land and its magic evolve? And who – or what – might stand in her way?</p>
+      <p>Your input shapes the next steps of Ceyla’s journey. Share your thoughts:</p>
+      <p>Should Ceyla’s first trial in the forest test her connection to nature, her courage, or her newfound powers?<br />
+      What kind of ally – or adversary – should she encounter next?<br />
+      What secrets might the forest reveal as she ventures deeper?</p>
+      <p>Comment below to help guide the story’s next chapter. Aeloria’s fate rests in your hands!</p>
       {/* Include Feedback Form */}
       <FeedbackForm story="2" chapter="2" />
 

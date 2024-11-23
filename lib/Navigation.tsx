@@ -42,9 +42,7 @@ export default function Navigation() {
   };
 
   const handleClose = () => {
-    if (!isDesktop) {
-      setIsOpen(false); // Close dropdown for mobile
-    }
+    setIsOpen(false); // Close dropdown for mobile
   };
 
   return (
@@ -80,19 +78,18 @@ export default function Navigation() {
               opacity: isOpen ? 1 : 0,
               transition: "opacity 0.2s ease, visibility 0.2s ease",
             }}
-            onClick={handleClose} // Close dropdown after clicking on a menu item (mobile)
           >
-            <li>
+            <li onClick={handleClose}>
               <Link href="/stories/clockmakerscurse" className="link">
                 The Clockmaker&apos;s Curse
               </Link>
             </li>
-            <li>
+            <li onClick={handleClose}>
               <Link href="/stories/whispersverdantthrone" className="link">
                 Whispers of the Verdant Throne
               </Link>
             </li>
-            <li>
+            <li onClick={handleClose}>
               <Link href="/stories/beneathironskies" className="link">
                 Beneath the Iron Skies
               </Link>

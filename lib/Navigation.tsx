@@ -9,7 +9,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768); // Detect if it's desktop or mobile
+      setIsDesktop(window.innerWidth > 768); // Detect desktop or mobile
     };
 
     window.addEventListener("resize", handleResize);
@@ -22,14 +22,12 @@ export default function Navigation() {
 
   const handleToggle = () => {
     if (!isDesktop) {
-      setIsOpen((prev) => !prev); // Toggle dropdown on mobile
+      setIsOpen((prev) => !prev); // Toggle dropdown for mobile
     }
   };
 
   const handleClose = () => {
-    if (!isDesktop) {
-      setTimeout(() => setIsOpen(false), 100); // Close dropdown after navigation
-    }
+    setIsOpen(false); // Close dropdown immediately
   };
 
   return (

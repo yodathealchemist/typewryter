@@ -57,7 +57,7 @@ export default function Story() {
 <p>Her mind reeled, a flood of memories and questions colliding in a dizzying swirl. George, the man who had greeted her at the station, who had carried her suitcase and reassured her with his calm presence, was... gone. The word felt hollow, inadequate, as though it couldn’t possibly encompass the reality of what had happened. And the clock tower. Why there? What had drawn him to that place, and what had taken him from it?</p>
 
 
-        
+      </div>
 
 {/* Ad (Standard size, e.g., 728x90) */}
       <div

@@ -79,7 +79,7 @@ export default function Story() {
         Chapter 4: The Call
       </Link>
       <Link href="/stories/clockmakerscurse/chapter5" className="link">
-        <b>Chapter 5: The Clock&apos;s Toll</b> <br />(latest chapter)
+        <b>Latest Chapter:</b><br />Chapter 5: The Clock&apos;s Toll
       </Link>
       
       {/* Bottom Ad (Large size, e.g., 970x250) */}

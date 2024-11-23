@@ -26,9 +26,9 @@ export default function Navigation() {
     }
   };
 
-  const handleClose = () => {
+  const handleClose = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (!isDesktop) {
-      setIsOpen(false); // Close dropdown on mobile
+      setTimeout(() => setIsOpen(false), 100); // Close dropdown after navigation
     }
   };
 
@@ -78,18 +78,18 @@ export default function Navigation() {
                 borderRadius: "4px",
               }}
             >
-              <li onClick={handleClose}>
-                <Link href="/stories/clockmakerscurse" className="link">
+              <li>
+                <Link href="/stories/clockmakerscurse" className="link" onClick={handleClose}>
                   The Clockmaker&apos;s Curse
                 </Link>
               </li>
-              <li onClick={handleClose}>
-                <Link href="/stories/whispersverdantthrone" className="link">
+              <li>
+                <Link href="/stories/whispersverdantthrone" className="link" onClick={handleClose}>
                   Whispers of the Verdant Throne
                 </Link>
               </li>
-              <li onClick={handleClose}>
-                <Link href="/stories/beneathironskies" className="link">
+              <li>
+                <Link href="/stories/beneathironskies" className="link" onClick={handleClose}>
                   Beneath the Iron Skies
                 </Link>
               </li>

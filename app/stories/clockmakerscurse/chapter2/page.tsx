@@ -112,7 +112,19 @@ export default function Story() {
 
         
       </div>
-
+      ———————————
+      <Link href="/stories/clockmakerscurse/chapter3" className="link">
+        Next Chapter
+      </Link>
+      ———————————
+      <Link href="/stories/clockmakerscurse" className="link">
+        Overview
+      </Link> 
+      ———————————
+      <Link href="/stories/clockmakerscurse/chapter1" className="link">
+        Last Chapter
+      </Link>
+      ———————————
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{

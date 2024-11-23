@@ -67,16 +67,19 @@ export default function Story() {
       <h2>List of Chapters</h2>
       
       <Link href="/clockmakerscurse/chapter1/page" className="link">
-        Chapter 1
+        Chapter 1: Return to Havensbrook
       </Link>
       <Link href="/clockmakerscurse/chapter2/page" className="link">
-        Chapter 2
+        Chapter 2: The House
       </Link>
       <Link href="/clockmakerscurse/chapter3/page" className="link">
-        Chapter 3
+        Chapter 3: Shadows
+      </Link>
+      <Link href="/clockmakerscurse/chapter3/page" className="link">
+        Chapter 4: The Call
       </Link>
       <Link href="/clockmakerscurse/chapter4/page" className="link">
-        <b>Chapter 4</b> (latest chapter)
+        <b>Chapter 5: </b> (latest chapter)
       </Link>
       
       {/* Bottom Ad (Large size, e.g., 970x250) */}

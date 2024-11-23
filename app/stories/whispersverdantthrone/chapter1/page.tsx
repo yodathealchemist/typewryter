@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/link';
+import Link from ’next/link’;
 
 export default function Story() {
   return (
@@ -154,11 +154,11 @@ export default function Story() {
 <h4><em>The Glow in the Garden</em></h4>
 
 
-<p>The hours after the fox's disappearance passed in a blur of restless thoughts and fractured dreams. Ceyla had tried to sleep, but her mind churned with images of glowing eyes, the forest's haunting stillness, and the words that echoed endlessly: <em>The balance is broken. The land calls for you.</em></p>
+<p>The hours after the fox’s disappearance passed in a blur of restless thoughts and fractured dreams. Ceyla had tried to sleep, but her mind churned with images of glowing eyes, the forest’s haunting stillness, and the words that echoed endlessly: <em>The balance is broken. The land calls for you.</em></p>
 <p>When the first light of dawn crept through her window, she gave up trying to rest. The cottage was steeped in silence, broken only by the crackling embers of last night’s fire. Ceyla sat by the hearth, cradling a cup of tea that had long since gone cold, staring into the faint glow of the dying coals. Her fingers traced idle patterns along the rim of the mug as she replayed the encounter in her mind. The fox’s presence had felt too real to dismiss as a dream, and yet too impossible to accept as reality.</p>
 <p>She glanced toward the sack of grain in the corner. It sat motionless, but the weight of its presence still lingered, heavy and oppressive. Whatever had tainted the wheat wasn’t natural. That much she was certain of now. It wasn’t just a bad harvest or damp weather – it was something far worse, something that felt connected to the fox’s cryptic message.</p>
 <p>The first rays of sunlight spilled into the cottage, casting faint patterns of gold across the floor. Ceyla rose from her chair, abandoning the cold tea on the table. If the forest truly held answers, as the fox had claimed, she couldn’t find them sitting here. She grabbed her shawl and stepped outside, inhaling the cool, dewy air. The garden stretched before her, vibrant and full of life, but her gaze was drawn immediately to the forest beyond.</p>
-<p>It loomed like a vast, breathing entity, its shadows deep and tangled. The trees, so ancient they seemed carved from the bones of the earth itself, stood still and watchful. Though the dawn brought a faint rustling of leaves and the distant trill of birds, the forest's silence from the previous day still lingered in her memory, unnerving and unnatural.</p>
+<p>It loomed like a vast, breathing entity, its shadows deep and tangled. The trees, so ancient they seemed carved from the bones of the earth itself, stood still and watchful. Though the dawn brought a faint rustling of leaves and the distant trill of birds, the forest’s silence from the previous day still lingered in her memory, unnerving and unnatural.</p>
 <p>Ceyla hesitated at the garden’s edge. The pull toward the forest was stronger now, an insistent hum at the back of her mind, like the plucking of an unseen string. She couldn’t explain it, but it felt as though the land itself was calling to her, urging her to step beneath the trees and listen.</p>
 <p>“I don’t even know what I’m looking for,” she murmured to herself. But the words of the fox echoed again, clearer now in the quiet morning air: <em>The forest will guide you.</em></p>
 <p>She stepped past the garden’s boundary, her boots crunching softly against the forest floor. The air changed immediately, growing cooler and carrying the faint, earthy scent of moss and bark. Light filtered through the canopy in golden shafts, illuminating patches of ferns and wildflowers that seemed to glow in the soft dawn. The trees were vast and ancient, their gnarled roots twisting like veins across the ground. Ceyla couldn’t shake the feeling that the forest was alive in a way she had never noticed before, its presence pulsing around her like a heartbeat.</p>

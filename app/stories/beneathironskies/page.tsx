@@ -47,7 +47,7 @@ export default function Story() {
 <p>In this moving tale of resilience, redemption, and romance, Beneath the Iron Skies is a testament to the courage it takes to break free and the beauty that lies in forging a new path – together.</p>
       </div>
       {/* Include Feedback Form */}
-      Coming soon!
+      <b>Coming soon!</b>
       {/* <FeedbackForm story="3" chapter="0" /> */}
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}

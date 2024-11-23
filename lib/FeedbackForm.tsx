@@ -17,33 +17,28 @@ export default function FeedbackForm({ story, chapter }: { story: string; chapte
 
     if (response.ok) {
       alert("Your comment has been submitted!");
-      (e.target as HTMLFormElement).reset(); // Explicitly tell TypeScript it's a form
+      (e.target as HTMLFormElement).reset();
     } else {
       alert("Something went wrong. Please try again.");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-      <label
-        htmlFor="feedback"
-        style={{ display: "block", marginBottom: "10px" }}
-      >
+    <form
+      onSubmit={handleSubmit}
+      className="feedback-form"
+    >
+      <label htmlFor="feedback" className="feedback-label">
         Share your ideas to shape the story:
       </label>
       <textarea
         id="feedback"
         name="feedback"
-        rows={4}
-        style={{
-          width: "100%",
-          marginTop: "10px",
-          display: "block",
-          marginBottom: "10px",
-        }}
+        rows={8}
+        className="feedback-textarea"
         required
       ></textarea>
-      <button type="submit" style={{ marginTop: "10px" }}>
+      <button type="submit" className="feedback-button">
         Submit
       </button>
     </form>

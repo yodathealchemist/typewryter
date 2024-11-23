@@ -28,25 +28,25 @@ export default function Navigation() {
     const dropdownParent = document.querySelector(".dropdown");
 
     if (dropdownParent) {
+      // Handle dropdown open on hover
       dropdownParent.addEventListener("mouseenter", openDropdown);
       dropdownParent.addEventListener("mouseleave", closeDropdown);
-      dropdownParent.addEventListener("click", closeDropdown); // Close on item click
-    }
 
-    // Ensure dropdown closes on touch devices
-    dropdown?.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", closeDropdown);
-    });
+      // Handle dropdown close on item click
+      dropdown.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeDropdown);
+      });
+    }
 
     return () => {
       if (dropdownParent) {
         dropdownParent.removeEventListener("mouseenter", openDropdown);
         dropdownParent.removeEventListener("mouseleave", closeDropdown);
-        dropdownParent.removeEventListener("click", closeDropdown);
+
+        dropdown.querySelectorAll("a").forEach((link) => {
+          link.removeEventListener("click", closeDropdown);
+        });
       }
-      dropdown?.querySelectorAll("a").forEach((link) => {
-        link.removeEventListener("click", closeDropdown);
-      });
     };
   }, []);
 

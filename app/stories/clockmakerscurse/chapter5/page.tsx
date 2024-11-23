@@ -207,7 +207,7 @@ export default function Story() {
       </div>
       
       {/* Include Feedback Form */}
-      <FeedbackForm story="1" chapter="1" />
+      <FeedbackForm story="1" chapter="5" />
 
       
       ———————————
@@ -215,8 +215,8 @@ export default function Story() {
         Overview
       </Link> 
       ———————————
-      <Link href="/stories/clockmakerscurse/chapter3" className="link">
-        Last Chapter
+      <Link href="/stories/clockmakerscurse/chapter4" className="link">
+        Previous Chapter
       </Link>
       ———————————
 

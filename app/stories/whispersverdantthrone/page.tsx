@@ -69,10 +69,10 @@ export default function Story() {
       <h3>List of Chapters:</h3>
       ———————————————————
       <Link href="/stories/whispersverdantthrone/chapter1" className="link">
-        Chapter 1: 
+        Chapter 1: The Silent Bloom
       </Link>———————————————————
       <Link href="/stories/whispersverdantthrone/chapter2" className="link">
-        Chapter 2: <br />
+        Chapter 2: Verdance Unraveled<br />
         <b>(Latest Chapter)</b>
       </Link>———————————————————
 

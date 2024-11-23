@@ -26,7 +26,7 @@ export default function Navigation() {
     }
   };
 
-  const handleClose = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClose = () => {
     if (!isDesktop) {
       setTimeout(() => setIsOpen(false), 100); // Close dropdown after navigation
     }

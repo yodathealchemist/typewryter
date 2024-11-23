@@ -81,6 +81,7 @@ nav {
 }
 
 .dropdown-content {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -94,14 +95,10 @@ nav {
   border-radius: 4px;
   max-width: calc(100vw - var(--dropdown-left, 0px) - 40px);
   width: max-content;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-.dropdown-content.visible {
-  visibility: visible;
-  opacity: 1;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content li {
@@ -119,16 +116,16 @@ nav {
 .feedback-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-  max-width: 800px;
-  width: 100%;
+  align-items: center; /* Center form horizontally */
+  justify-content: center; /* Center form vertically */
+  margin: 20px auto; /* Center on the page with margin */
+  max-width: 800px; /* Set a maximum width for the form */
+  width: 100%; /* Allow full width up to the max-width */
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .feedback-label {

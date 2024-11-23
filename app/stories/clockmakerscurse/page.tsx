@@ -64,7 +64,7 @@ export default function Story() {
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      <h2>List of Chapters</h2>
+      <h3>List of Chapters:</h3>
       ———————————————————
       <Link href="/stories/clockmakerscurse/chapter1" className="link">
         Chapter 1: Return to Havensbrook

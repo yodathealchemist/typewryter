@@ -10,7 +10,7 @@ export default function Navigation() {
     const updateDropdownPosition = () => {
       if (!dropdown) return;
       const rect = dropdown.getBoundingClientRect();
-      dropdown.style.setProperty("--dropdown-left", ${rect.left}px);
+      dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
     const dropdownParent = document.querySelector(".dropdown");

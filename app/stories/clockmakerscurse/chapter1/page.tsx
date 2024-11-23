@@ -1,7 +1,5 @@
 "use client";
 
-import FeedbackForm from "@/lib/FeedbackForm";
-
 export default function Story() {
   return (
     <div
@@ -62,6 +60,8 @@ export default function Story() {
 <p>“Miss Carter?”</p>
 <p>The voice was low, steady, and impossibly familiar.</p>
 
+      </div>
+        
 {/* Ad (Standard size, e.g., 728x90) */}
       <div
         style={{
@@ -109,10 +109,6 @@ export default function Story() {
 <p>Amelia nodded, falling into step beside him as they walked toward the parking lot. The gravel crunched under their feet, the sound sharp in the quiet. The station loomed behind them, its lights flickering faintly, but Amelia kept her gaze forward, focusing on the path ahead. The clock tower was still there, a presence she couldn’t quite shake, but for now, she was moving forward, one step at a time.</p>
         
       </div>
-
-      
-      {/* Include Feedback Form */}
-      <FeedbackForm story="1" chapter="1" />
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

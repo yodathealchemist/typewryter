@@ -1,6 +1,6 @@
 "use client";
 
-import FeedbackForm from "@/lib/FeedbackForm";
+import Link from 'next/link';
 
 export default function Story() {
   return (
@@ -47,8 +47,34 @@ export default function Story() {
 <p>Joined by a band of unlikely allies – a fallen warrior, a clumsy mage, a cunning thief, and a stone-hearted giant – Ceyla must traverse the elemental realms, face corrupted magic, and confront the shadowy forces that threaten to consume Aeloria. But as the truth of her ancestor&apos;s betrayal comes to light, Ceyla must make an impossible choice: restore the Throne and save her world, or destroy it forever.</p>
 <p>Whispers of the Verdant Throne is a sweeping fantasy adventure filled with elemental magic, gripping betrayals, and the enduring question: What would you sacrifice to save the world?</p>
       </div>
-      {/* Include Feedback Form */}
-      <FeedbackForm story="2" chapter="0" />
+
+      {/* Top Ad (Standard size, e.g., 728x90) */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+        className="top-ad"
+      >
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+
+      <h3>List of Chapters:</h3>
+      ———————————————————
+      <Link href="/stories/whispersverdantthrone/chapter1" className="link">
+        Chapter 1: 
+      </Link>———————————————————
+      <Link href="/stories/whispersverdantthrone/chapter2" className="link">
+        Chapter 2: <br />
+        <b>(Latest Chapter)</b>
+      </Link>———————————————————
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

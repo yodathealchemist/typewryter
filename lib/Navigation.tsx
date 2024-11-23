@@ -8,41 +8,28 @@ export default function Navigation() {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
-    const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
-
-    const updateDropdownPosition = () => {
-      if (!dropdown) return;
-      const rect = dropdown.getBoundingClientRect();
-      dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
-    };
-
     const handleResize = () => {
-      // Check if the device is desktop (hover interaction) or mobile (touch interaction)
-      setIsDesktop(window.innerWidth > 768);
+      setIsDesktop(window.innerWidth > 768); // Detect if it's desktop or mobile
     };
 
-    // Update dropdown position on hover (desktop) or when opened (mobile)
-    if (isDesktop || isOpen) {
-      updateDropdownPosition();
-    }
-
-    // Listen for window resize to switch between desktop and mobile interactions
     window.addEventListener("resize", handleResize);
     handleResize(); // Initialize on mount
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isOpen, isDesktop]);
+  }, []);
 
   const handleToggle = () => {
     if (!isDesktop) {
-      setIsOpen((prev) => !prev); // Toggle dropdown for mobile
+      setIsOpen((prev) => !prev); // Toggle dropdown on mobile
     }
   };
 
   const handleClose = () => {
-    setIsOpen(false); // Close dropdown for mobile
+    if (!isDesktop) {
+      setIsOpen(false); // Close dropdown on mobile
+    }
   };
 
   return (
@@ -66,35 +53,48 @@ export default function Navigation() {
           className="dropdown"
           onMouseEnter={() => isDesktop && setIsOpen(true)} // Open on hover (desktop)
           onMouseLeave={() => isDesktop && setIsOpen(false)} // Close on hover out (desktop)
-          onClick={handleToggle} // Toggle on click (mobile)
         >
-          <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
+          <div
+            className="link dropdown-toggle"
+            style={{ cursor: "pointer" }}
+            onClick={handleToggle} // Toggle on click (mobile)
+          >
             Stories ▼
           </div>
-          <ul
-            className={`dropdown-content ${isOpen ? "visible" : ""}`}
-            style={{
-              visibility: isOpen ? "visible" : "hidden",
-              opacity: isOpen ? 1 : 0,
-              transition: "opacity 0.2s ease, visibility 0.2s ease",
-            }}
-          >
-            <li onClick={handleClose}>
-              <Link href="/stories/clockmakerscurse" className="link">
-                The Clockmaker&apos;s Curse
-              </Link>
-            </li>
-            <li onClick={handleClose}>
-              <Link href="/stories/whispersverdantthrone" className="link">
-                Whispers of the Verdant Throne
-              </Link>
-            </li>
-            <li onClick={handleClose}>
-              <Link href="/stories/beneathironskies" className="link">
-                Beneath the Iron Skies
-              </Link>
-            </li>
-          </ul>
+          {isOpen && (
+            <ul
+              className="dropdown-content"
+              style={{
+                position: "absolute",
+                top: "100%",
+                left: "0",
+                border: "1px solid #ddd",
+                zIndex: 1,
+                listStyle: "none",
+                padding: "10px",
+                margin: 0,
+                backgroundColor: "#f8f9fa",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                borderRadius: "4px",
+              }}
+            >
+              <li onClick={handleClose}>
+                <Link href="/stories/clockmakerscurse" className="link">
+                  The Clockmaker&apos;s Curse
+                </Link>
+              </li>
+              <li onClick={handleClose}>
+                <Link href="/stories/whispersverdantthrone" className="link">
+                  Whispers of the Verdant Throne
+                </Link>
+              </li>
+              <li onClick={handleClose}>
+                <Link href="/stories/beneathironskies" className="link">
+                  Beneath the Iron Skies
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <Link href="/backstage/" className="link">

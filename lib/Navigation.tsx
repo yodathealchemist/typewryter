@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
@@ -15,25 +16,36 @@ export default function Navigation() {
       dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
-    const closeDropdown = () => setIsOpen(false);
-
-    const handleClickOutside = (event: MouseEvent) => {
-      if (!(event.target as HTMLElement).closest(".dropdown")) {
-        closeDropdown();
-      }
+    const handleResize = () => {
+      // Check if the device is desktop (hover interaction) or mobile (touch interaction)
+      setIsDesktop(window.innerWidth > 768);
     };
 
-    if (isOpen) {
+    // Update dropdown position on hover (desktop) or when opened (mobile)
+    if (isDesktop || isOpen) {
       updateDropdownPosition();
-      document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("click", handleClickOutside);
     }
 
+    // Listen for window resize to switch between desktop and mobile interactions
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initialize on mount
+
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [isOpen]);
+  }, [isOpen, isDesktop]);
+
+  const handleToggle = () => {
+    if (!isDesktop) {
+      setIsOpen((prev) => !prev); // Toggle dropdown for mobile
+    }
+  };
+
+  const handleClose = () => {
+    if (!isDesktop) {
+      setIsOpen(false); // Close dropdown for mobile
+    }
+  };
 
   return (
     <nav>
@@ -52,12 +64,13 @@ export default function Navigation() {
             Home
           </Link>
         </li>
-        <li className="dropdown">
-          <div
-            className="link dropdown-toggle"
-            style={{ cursor: "pointer" }}
-            onClick={() => setIsOpen((prev) => !prev)}
-          >
+        <li
+          className="dropdown"
+          onMouseEnter={() => isDesktop && setIsOpen(true)} // Open on hover (desktop)
+          onMouseLeave={() => isDesktop && setIsOpen(false)} // Close on hover out (desktop)
+          onClick={handleToggle} // Toggle on click (mobile)
+        >
+          <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
             Stories ▼
           </div>
           <ul
@@ -67,6 +80,7 @@ export default function Navigation() {
               opacity: isOpen ? 1 : 0,
               transition: "opacity 0.2s ease, visibility 0.2s ease",
             }}
+            onClick={handleClose} // Close dropdown after clicking on a menu item (mobile)
           >
             <li>
               <Link href="/stories/clockmakerscurse" className="link">

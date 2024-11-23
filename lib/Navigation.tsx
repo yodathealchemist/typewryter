@@ -7,18 +7,21 @@ export default function Navigation() {
   useEffect(() => {
     const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
 
+    // Function to update dropdown position
     const updateDropdownPosition = () => {
       if (!dropdown) return;
       const rect = dropdown.getBoundingClientRect();
       dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
+    // Function to close the dropdown
     const closeDropdown = () => {
       if (dropdown) {
         dropdown.style.display = "none";
       }
     };
 
+    // Function to open the dropdown
     const openDropdown = () => {
       if (dropdown) {
         dropdown.style.display = "block";
@@ -28,8 +31,11 @@ export default function Navigation() {
     const dropdownParent = document.querySelector(".dropdown");
 
     if (dropdownParent) {
-      // Handle dropdown open on hover
-      dropdownParent.addEventListener("mouseenter", openDropdown);
+      // Handle dropdown open/close on hover
+      dropdownParent.addEventListener("mouseenter", () => {
+        updateDropdownPosition();
+        openDropdown();
+      });
       dropdownParent.addEventListener("mouseleave", closeDropdown);
 
       // Handle dropdown close on item click

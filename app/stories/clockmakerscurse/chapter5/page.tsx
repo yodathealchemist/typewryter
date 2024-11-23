@@ -205,7 +205,10 @@ export default function Story() {
 
         
       </div>
-      
+      <h3>What Happens Next?</h3>
+      <p>Amelia stands at a crossroads, with the notebook’s cryptic message – <em>Follow the chimes</em> – ringing in her mind. But where should she go from here?</p>
+      <p>Should Amelia head straight to the tower, daring to uncover its hidden truths, despite the danger? Does she investigate George’s last movements to understand how he became entangled in this mystery? Should Amelia seek out Havensbrook’s older residents or records for answers buried in the past? Or something completely different?</p>
+      <p>What path will Amelia take next? The choice is yours.</p>
       {/* Include Feedback Form */}
       <FeedbackForm story="1" chapter="5" />
 

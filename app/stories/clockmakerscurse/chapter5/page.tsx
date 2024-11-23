@@ -1,5 +1,7 @@
 "use client";
 
+import Link from 'next/link';
+
 import FeedbackForm from "@/lib/FeedbackForm";
 
 export default function Story() {
@@ -206,6 +208,17 @@ export default function Story() {
       
       {/* Include Feedback Form */}
       <FeedbackForm story="1" chapter="1" />
+
+      
+      ———————————
+      <Link href="/stories/clockmakerscurse" className="link">
+        Overview
+      </Link> 
+      ———————————
+      <Link href="/stories/clockmakerscurse/chapter3" className="link">
+        Last Chapter
+      </Link>
+      ———————————
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

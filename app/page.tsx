@@ -44,6 +44,25 @@ export default function Home() {
         <h3 style={{ fontSize: "1.5rem", margin: "0.5rem 0" }}>
           where your imagination shapes the journey.
         </h3>
+
+      {/* Ad (Standard size, e.g., 728x90) */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "728px",
+          height: "90px",
+          backgroundColor: "#f0f0f0",
+          border: "2px dashed #ccc",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+        className="top-ad"
+      >
+        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+        
         <p>
           Step into a world of choice-driven storytelling and iscover tales that will intrigue, inspire, and immerse you in unforgettable adventures.
         </p>

@@ -84,7 +84,7 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50vw;
+  left: 50%;
   transform: translateX(-50%);
   border: 1px solid #ddd;
   z-index: 1;
@@ -96,7 +96,7 @@ nav {
   border-radius: 4px;
   max-width: calc(100vw - 40px);
   width: max-content;
-  textAlign: center;
+  text-align: center;
 }
 
 .dropdown:hover .dropdown-content {

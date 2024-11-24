@@ -18,7 +18,7 @@ export default function Navigation() {
   <nav>
     <ul
       style={{
-        display: "flex",
+        width: "300px",
         listStyle: "none",
         padding: 0,
         margin: 0,

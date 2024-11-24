@@ -1,11 +1,10 @@
 "use client";
 
-import { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
 import Navigation from "@/lib/Navigation";
-import { usePathname } from "next/navigation"; // Import to track the current route
+import { usePathname } from "next/navigation";
 import "./globals.css";
 
 // Fonts
@@ -23,18 +22,6 @@ const geistMono = localFont({
   display: "swap",
 });
 
-// Metadata
-export const metadata: Metadata = {
-  title: "type_wryter | Interactive Storytelling Platform",
-  description: "Engage with immersive, interactive stories across various genres.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  themeColor: "#ffffff",
-  icons: {
-    icon: "/favicon.ico", // Same icon for all devices
-    apple: "/favicon.ico", // Apple devices
-  },
-};
-
 // Layout Component
 export default function RootLayout({
   children,
@@ -47,14 +34,13 @@ export default function RootLayout({
     <html lang="en" key={pathname}> {/* Add key={pathname} */}
       <head>
         <title>type_wryter | Interactive Storytelling</title>
-        <meta name="description" content="Engage with immersive, interactive stories across various genres." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header /> {/* Header will reload with every route change */}
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>

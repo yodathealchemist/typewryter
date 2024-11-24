@@ -68,7 +68,7 @@ export default function Home() {
         </p>
         <div className="story-overview">
           <h2>Currently Active Stories</h2>
-          ___________________________________________
+          <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
           <h4>The Clockmaker&apos;s Curse:</h4>
           <p>A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.</p>
           <h4>Whispers of the Verdant Throne:</h4>

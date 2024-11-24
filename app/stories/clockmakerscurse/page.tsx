@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Story() {
   return (
@@ -41,16 +42,13 @@ export default function Story() {
           marginBottom: "20px",
         }}
       >
-        <img
-          src="/clockmakerscurse.webp"
-          alt="Havensbrook’s Clocktower at dawn"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-            aspectRatio: "16 / 9", // Optional: explicitly enforce aspect ratio
-          }}
-        />
+        <Image
+        src="/clockmakerscurse.webp"
+        alt="The Clockmaker's Curse cover"
+        layout="responsive"
+        width={1792} // Original width of the image
+        height={1024} // Original height of the image
+      />
       </div>
          
       {/* Main Content */}

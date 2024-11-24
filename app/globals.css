@@ -1,41 +1,78 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  background-color: #dbdbdb;
   color: #333;
   line-height: 1.5;
 }
 
-/* Navigation Bar Styles */
-nav {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 20px;
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
-.nav-bar {
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Logo Styles */
+.logo-container {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
 }
 
-/* Link Styles */
+/* Footer Styles */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+footer .link {
+  font-weight: bold;
+}
+
+/* Navigation Styles */
+nav {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Menu Link Styles */
 .link {
+  font-weight: normal;
   color: #333;
   text-decoration: none;
-  font-weight: normal;
-  transition: color 0.2s ease, font-weight 0.2s ease;
+  transition: font-weight 0.2s ease;
 }
 
 .link:hover {
-  color: #007bff;
   font-weight: bold;
+}
+
+.link:visited,
+.link:active {
+  color: #333;
 }
 
 /* Dropdown Styles */
@@ -43,61 +80,89 @@ nav {
   position: relative;
 }
 
-.dropdown-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: #333;
-  transition: color 0.2s ease;
-}
-
-.dropdown-toggle:hover {
-  color: #007bff;
-}
-
-.dropdown-menu {
+.dropdown-content {
+  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
   list-style: none;
-  padding: 10px 0;
+  padding: 10px;
   margin: 0;
-  min-width: 200px;
-  z-index: 1000;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  max-width: calc(100vw - 40px);
+  width: max-content;
 }
 
-.dropdown-menu li {
-  padding: 5px 20px;
-}
-
-.dropdown-menu li:hover {
-  background-color: #f0f0f0;
-}
-
-.dropdown-menu .link {
+.dropdown:hover .dropdown-content {
   display: block;
-  width: 100%;
-  text-align: left;
 }
 
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.dropdown-content li {
+  margin: 3pt 0;
+  padding: 5px;
+}
 
-  .dropdown-menu {
-    left: auto;
-    right: 0;
-    transform: none;
-    width: calc(100% - 20px);
-    border-radius: 0;
-  }
+.dropdown-content li:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form horizontally */
+  justify-content: center; /* Center form vertically */
+  margin: 20px auto; /* Center on the page with margin */
+  max-width: 800px; /* Set a maximum width for the form */
+  width: 100%; /* Allow full width up to the max-width */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.feedback-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feedback-textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.feedback-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3;
+}
+
+.feedback-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

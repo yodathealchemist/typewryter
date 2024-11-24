@@ -41,9 +41,9 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2>Chapter 1: The Silent Bloom</h2>
+<h2 style={{ textAlign: "center" }}>Chapter 1: The Silent Bloom</h2>
 
-<h4><em>The Quiet Life of Bramblehold</em></h4>
+<h4 style={{ textAlign: "center" }}><em>The Quiet Life of Bramblehold</em></h4>
 
 
 <p>In the corner of the Verdant Realm, nestled where the ancient forest gave way to sun-dappled meadows, lay the village of Bramblehold. Here, life moved with a rhythm as steady and unchanging as the seasons. Crops ripened in the warmth of summer, the forest offered its bounty in autumn, and winter brought a hushed stillness that blanketed the world. The outside world’s chaos – the fiery conflicts of the Flame Realm, the raging tempests of the Gale Realm – seemed as distant as the stars in Bramblehold. Yet the villagers knew, deep in their bones, that their lives were tied to the forest’s breath, the heartbeat of Verdance.</p>
@@ -95,7 +95,7 @@ export default function Story() {
         }}
       >
 
-<h4><em>A Day Like Any Other</em></h4>
+<h4 style={{ textAlign: "center" }}><em>A Day Like Any Other</em></h4>
 
 
 <p>The rest of the day unfolded with the usual rhythm of village life, though the unease from the morning lingered like a shadow. Ceyla busied herself with her herbal work, grinding dried leaves into powders, infusing oils with blossoms, and bottling tinctures for the villagers who depended on her. But her thoughts strayed constantly to the sack of blackened grain sitting by her workbench. Every now and then, she would glance at it, as if expecting it to move or whisper, though it did neither. Still, the silence around it seemed heavy, unnatural.</p>
@@ -151,7 +151,7 @@ export default function Story() {
         }}
       >
 
-<h4><em>The Glow in the Garden</em></h4>
+<h4 style={{ textAlign: "center" }}><em>The Glow in the Garden</em></h4>
 
 
 <p>The hours after the fox’s disappearance passed in a blur of restless thoughts and fractured dreams. Ceyla had tried to sleep, but her mind churned with images of glowing eyes, the forest’s haunting stillness, and the words that echoed endlessly: <em>The balance is broken. The land calls for you.</em></p>

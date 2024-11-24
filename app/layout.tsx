@@ -1,8 +1,11 @@
+"use client";
+
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
 import Navigation from "@/lib/Navigation";
+import { usePathname } from "next/navigation"; // Import to track the current route
 import "./globals.css";
 
 // Fonts
@@ -38,8 +41,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname(); // Get the current route
+
   return (
-    <html lang="en">
+    <html lang="en" key={pathname}> {/* Add key={pathname} */}
       <head>
         <title>type_wryter | Interactive Storytelling</title>
         <meta name="description" content="Engage with immersive, interactive stories across various genres." />
@@ -49,7 +54,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
+        <Header /> {/* Header will reload with every route change */}
         <main>{children}</main>
         <Footer />
       </body>

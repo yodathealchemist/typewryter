@@ -106,19 +106,22 @@ export default function Story() {
 
         
       </div>
-      ———————————
-      <Link href="/stories/clockmakerscurse/chapter5" className="link">
-        Next Chapter
-      </Link>
-      ———————————
-      <Link href="/stories/clockmakerscurse" className="link">
-        Overview
-      </Link> 
-      ———————————
-      <Link href="/stories/clockmakerscurse/chapter3" className="link">
-        Previous Chapter
-      </Link>
-      ———————————
+
+      <div style={{ width: "200px" }}>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter5" className="link">
+          Next Chapter
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse" className="link">
+          Overview
+        </Link> 
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter3" className="link">
+          Previous Chapter
+        </Link>
+        <hr />
+      </div>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

@@ -84,15 +84,18 @@ export default function Story() {
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      <h3>List of Chapters:</h3>
-      ———————————————————
-      <Link href="/stories/whispersverdantthrone/chapter1" className="link">
-        Chapter 1: The Silent Bloom
-      </Link>———————————————————
-      <Link href="/stories/whispersverdantthrone/chapter2" className="link">
-        Chapter 2: Verdance Unraveled<br />
-        <b>(Latest Chapter)</b>
-      </Link>———————————————————
+      <div style={{ width: "300px" }}>
+        <h3>List of Chapters:</h3>
+        <hr />
+        <Link href="/stories/whispersverdantthrone/chapter1" className="link">
+          Chapter 1: The Silent Bloom
+        </Link>
+        <hr />
+        <Link href="/stories/whispersverdantthrone/chapter2" className="link">
+          Chapter 2: Verdance Unraveled<br />
+          <b>(Latest Chapter)</b>
+        </Link>
+      </div>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

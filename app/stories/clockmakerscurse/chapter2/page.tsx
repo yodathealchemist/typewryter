@@ -41,7 +41,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2 style={{ textAlign: "center" }}>Chapter 2: The House</h2>
+<h2 style={{ textAlign: "center" }}>Chapter 2: Welcome Home</h2>
 
         
 

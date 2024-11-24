@@ -68,9 +68,7 @@ nav {
 
 .link.active {
   font-weight: bold;
-  color: #007bff; /* Optional: Change color for active links */
 }
-
 
 .link:hover {
   font-weight: bold;

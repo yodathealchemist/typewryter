@@ -43,7 +43,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2>Chapter 5: The Clock&apos;s Toll</h2>
+<h2 style="text-align: center;">Chapter 5: The Clock&apos;s Toll</h2>
 
 
 

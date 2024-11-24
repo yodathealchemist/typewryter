@@ -85,6 +85,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #ddd;
   z-index: 1;
   list-style: none;

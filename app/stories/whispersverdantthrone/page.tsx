@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Story() {
   return (
@@ -41,16 +42,13 @@ export default function Story() {
           marginBottom: "20px",
         }}
       >
-        <img
-          src="/verdantthrone.webp"
-          alt="The verdant throne"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-            aspectRatio: "16 / 9", // Optional: explicitly enforce aspect ratio
-          }}
-        />
+      <Image
+        src="/verdantthrone.webp"
+        alt="Whispers of the Verdant Throne cover"
+        layout="responsive"
+        width={1792} // Original width of the image
+        height={1024} // Original height of the image
+      />
       </div>
          
       {/* Main Content */}

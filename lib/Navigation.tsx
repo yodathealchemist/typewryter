@@ -15,7 +15,7 @@ export default function Navigation() {
   };
 
   return (
-  <nav style={{ width: "300px" }}>
+  <nav style={{ width: "350px" }}>
     <ul
       style={{
         display: "flex",

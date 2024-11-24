@@ -94,8 +94,6 @@ export default function Story() {
         }}
       >
 
-
-
 <p>Amelia’s footsteps creaked softly on the wooden floor as she moved toward the workshop door, her hesitation growing heavier with each step. The house felt different now, as though it were watching her, its silence no longer comforting but charged, waiting. She stopped just short of the door, her fingers brushing against the wood. The surface was cool to the touch, worn smooth in places where Bernard’s hands had opened and closed it countless times. It felt alive, in a way, holding the echoes of his presence like a faint heartbeat.</p>
 <p>The door was ajar, just enough to show a sliver of the room beyond. Amelia pressed it open slowly, the hinges groaning softly as the room revealed itself to her. The air inside was cooler, tinged with the faint metallic scent of clock springs, oil, and varnish. It was a smell that instantly transported her back to her childhood, to the countless afternoons she’d spent watching Bernard work, his fingers deftly assembling intricate mechanisms while he hummed tunelessly under his breath.</p>
 <p>The workshop was both a sanctuary and a world unto itself, a space where chaos and order coexisted in perfect harmony. A single high window near the ceiling let in a faint, silvery light, its panes streaked with grime but still managing to illuminate the room with an almost ethereal glow. Dust motes floated lazily in the beam, their movement hypnotic as they drifted through the air. Amelia stood in the doorway for a moment, taking it all in, her heart heavy with the strange mix of familiarity and absence.</p>
@@ -111,6 +109,9 @@ export default function Story() {
 <p>She set the notebook back on the workbench, her hand resting on it for a moment longer before she stepped back. Her thoughts were racing, questions tumbling over one another with no answers in sight. What had Bernard been working on? What did “The Eleventh Hour” mean? And why did it feel so important, so urgent?</p>
 <p>Amelia exhaled slowly, her breath fogging faintly in the cool air. She felt a shiver run down her spine, though she couldn’t tell if it was from the chill or the growing sense of unease that seemed to fill the room. Whatever Bernard had been working on, it was clear that it was more than just clockwork. The intricate mechanisms and carefully drawn schematics were only part of the story. There was something deeper here, something hidden beneath the surface.</p>
 <p>Turning toward the door, Amelia cast one last glance around the workshop. The ticking of the clocks followed her as she stepped out, their rhythm steady and unrelenting. She closed the door softly behind her, the cool air of the house feeling warmer by comparison. The notebook’s weight lingered in her mind, its presence impossible to ignore. She didn’t know what she had stumbled into, but one thing was clear: Bernard had left her a puzzle. And now, it was up to her to solve it.</p>
+
+
+      </div>
 
       <div style={{ width: "200px" }}>
         <hr />

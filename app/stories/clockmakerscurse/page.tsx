@@ -82,7 +82,7 @@ export default function Story() {
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      <div style={{ display: 'inline-block', padding: '0 10px' }}>
+      <div style={{  width: 250px }}>
         <h3>List of Chapters:</h3>
         <hr />
         <Link href="/stories/clockmakerscurse/chapter1" className="link">

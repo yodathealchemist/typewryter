@@ -1,24 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 
 export default function Navigation() {
-  const [key, setKey] = useState(0); // Key to force re-render
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = () => setKey((prev) => prev + 1);
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
 
   return (
-    <nav key={key}>
+    <nav>
       <ul
         style={{
           display: "flex",

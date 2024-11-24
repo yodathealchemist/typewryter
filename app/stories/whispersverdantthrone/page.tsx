@@ -95,6 +95,7 @@ export default function Story() {
           Chapter 2: Verdance Unraveled<br />
           <b>(Latest Chapter)</b>
         </Link>
+        <hr />
       </div>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}

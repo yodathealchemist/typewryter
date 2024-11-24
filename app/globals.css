@@ -61,10 +61,16 @@ nav {
 /* Menu Link Styles */
 .link {
   font-weight: normal;
-  color: #333;
   text-decoration: none;
+  color: #333;
   transition: font-weight 0.2s ease;
 }
+
+.link.active {
+  font-weight: bold;
+  color: #007bff; /* Optional: Change color for active links */
+}
+
 
 .link:hover {
   font-weight: bold;

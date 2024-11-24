@@ -90,7 +90,7 @@ export default function Story() {
         </Link>
         <hr />
         <Link href="/stories/clockmakerscurse/chapter2" className="link">
-          Chapter 2: The House
+          Chapter 2: Welcome Home
         </Link>
         <hr />
         <Link href="/stories/clockmakerscurse/chapter3" className="link">

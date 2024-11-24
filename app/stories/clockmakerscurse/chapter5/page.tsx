@@ -243,16 +243,17 @@ export default function Story() {
       {/* Include Feedback Form */}
       <FeedbackForm story="1" chapter="5" />
 
-      
-      ———————————
-      <Link href="/stories/clockmakerscurse" className="link">
-        Overview
-      </Link> 
-      ———————————
-      <Link href="/stories/clockmakerscurse/chapter4" className="link">
-        Previous Chapter
-      </Link>
-      ———————————
+      <div style={{ width: "200px" }}>
+        <hr />
+        <Link href="/stories/clockmakerscurse" className="link">
+          Overview
+        </Link> 
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter4" className="link">
+          Previous Chapter
+        </Link>
+        <hr />
+      </div>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

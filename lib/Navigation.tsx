@@ -1,14 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLUListElement>(null);
-
   useEffect(() => {
-    const dropdown = dropdownRef.current;
+    const dropdown = document.querySelector(".dropdown-content") as HTMLElement;
 
     const updateDropdownPosition = () => {
       if (!dropdown) return;
@@ -16,36 +13,17 @@ export default function Navigation() {
       dropdown.style.setProperty("--dropdown-left", `${rect.left}px`);
     };
 
-    const handleOutsideClick = (event: MouseEvent | TouchEvent) => {
-      if (dropdown && !dropdown.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
     const dropdownParent = document.querySelector(".dropdown");
     if (dropdownParent) {
       dropdownParent.addEventListener("mouseenter", updateDropdownPosition);
     }
 
-    document.addEventListener("mousedown", handleOutsideClick);
-    document.addEventListener("touchstart", handleOutsideClick);
-
     return () => {
       if (dropdownParent) {
         dropdownParent.removeEventListener("mouseenter", updateDropdownPosition);
       }
-      document.removeEventListener("mousedown", handleOutsideClick);
-      document.removeEventListener("touchstart", handleOutsideClick);
     };
   }, []);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeDropdown = () => {
-    setIsOpen(false);
-  };
 
   return (
     <nav>
@@ -65,26 +43,22 @@ export default function Navigation() {
           </Link>
         </li>
         <li className="dropdown">
-          <div 
-            className="link dropdown-toggle" 
-            style={{ cursor: "pointer" }}
-            onClick={toggleDropdown}
-          >
+          <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
             Stories ▼
           </div>
-          <ul className="dropdown-content" ref={dropdownRef}>
+          <ul className="dropdown-content">
             <li>
-              <Link href="/stories/clockmakerscurse" className="link" onClick={closeDropdown}>
+              <Link href="/stories/clockmakerscurse" className="link">
                 The Clockmaker&apos;s Curse
               </Link>
             </li>
             <li>
-              <Link href="/stories/whispersverdantthrone" className="link" onClick={closeDropdown}>
+              <Link href="/stories/whispersverdantthrone" className="link">
                 Whispers of the Verdant Throne
               </Link>
             </li>
             <li>
-              <Link href="/stories/beneathironskies" className="link" onClick={closeDropdown}>
+              <Link href="/stories/beneathironskies" className="link">
                 Beneath the Iron Skies
               </Link>
             </li>

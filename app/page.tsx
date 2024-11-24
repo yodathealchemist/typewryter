@@ -67,7 +67,7 @@ export default function Home() {
           Step into a world of choice-driven storytelling and iscover tales that will intrigue, inspire, and immerse you in unforgettable adventures.
         </p>
         <div>
-          <h3>The Clockmaker's Curse</h3>
+          <h3>The Clockmaker&apos;s Curse</h3>
           <p>A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.</p>
           <h3>Whispers of the Verdant Throne</h3>
           <p>In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?</p>

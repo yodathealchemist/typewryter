@@ -43,9 +43,9 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2>Chapter 2: Verdance Unraveled</h2>
+<h2 style={{ textAlign: "center" }}>Chapter 2: Verdance Unraveled</h2>
 
-<h4><em>Signs of Decay</em></h4>
+<h4 style={{ textAlign: "center" }}><em>Signs of Decay</em></h4>
 
 <p>The days following the fox’s visit brought unease that settled over Bramblehold like a heavy fog. The balance that had always kept the village thriving – unnoticed but dependable – seemed to falter, unraveling in ways that were subtle at first but quickly grew impossible to ignore. The creek that wound through the edge of the village, once clear and lively, slowed to a sluggish trickle, its waters dull and clouded. Crops that had stood tall and green just days before now wilted, their leaves yellowing under a sky that felt too bright, too harsh.</p>
 <p>Ceyla worked tirelessly in her garden, her hands moving with purpose as she tried to coax life back into her plants. But the magic that had always been second nature to her – the unspoken connection she shared with the land – seemed to falter. Leaves that should have perked up under her touch remained limp. Roots refused to strengthen. Even her prized lavender, a plant that had never failed her, began to curl at the edges, its vibrant purple blooms fading to a sickly gray.</p>
@@ -95,7 +95,7 @@ export default function Story() {
         }}
       >
 
-<h4><em>Whispers of Chaos</em></h4>
+<h4 style={{ textAlign: "center" }}><em>Whispers of Chaos</em></h4>
 
 
 
@@ -154,7 +154,7 @@ export default function Story() {
       >
 
 
-<h4><em>The Night of the Beasts</em></h4>
+<h4 style={{ textAlign: "center" }}><em>The Night of the Beasts</em></h4>
 
 
 
@@ -213,7 +213,7 @@ export default function Story() {
         }}
       >
 
-<h4><em>The Journey Begins</em></h4>
+<h4 style={{ textAlign: "center" }}><em>The Journey Begins</em></h4>
 
 
 

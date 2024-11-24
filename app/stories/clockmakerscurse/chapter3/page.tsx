@@ -41,7 +41,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2>Chapter 3: Shadows</h2>
+<h2 style="text-align: center;">Chapter 3: Shadows</h2>
 
         
 

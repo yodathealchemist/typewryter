@@ -1,8 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+  const pathname = usePathname();
+
+  const isActive = (href: string) => pathname === href;
 
   return (
     <nav>
@@ -17,7 +21,7 @@ export default function Navigation() {
         }}
       >
         <li>
-          <Link href="/" className="link">
+          <Link href="/" className={`link ${isActive("/") ? "active" : ""}`}>
             Home
           </Link>
         </li>
@@ -27,24 +31,39 @@ export default function Navigation() {
           </div>
           <ul className="dropdown-content">
             <li>
-              <Link href="/stories/clockmakerscurse" className="link">
+              <Link
+                href="/stories/clockmakerscurse"
+                className={`link ${
+                  isActive("/stories/clockmakerscurse") ? "active" : ""}`}
+              >
                 The Clockmaker&apos;s Curse
               </Link>
             </li>
             <li>
-              <Link href="/stories/whispersverdantthrone" className="link">
+              <Link
+                href="/stories/whispersverdantthrone"
+                className={`link ${
+                  isActive("/stories/whispersverdantthrone") ? "active" : ""}`}
+              >
                 Whispers of the Verdant Throne
               </Link>
             </li>
             <li>
-              <Link href="/stories/beneathironskies" className="link">
+              <Link
+                href="/stories/beneathironskies"
+                className={`link ${
+                  isActive("/stories/beneathironskies") ? "active" : ""}`}
+              >
                 Beneath the Iron Skies
               </Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link href="/backstage/" className="link">
+          <Link
+            href="/backstage/"
+            className={`link ${isActive("/backstage/") ? "active" : ""}`}
+          >
             Backstage
           </Link>
         </li>

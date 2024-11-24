@@ -44,9 +44,24 @@ export default function Home() {
         <h3 style={{ fontSize: "1.5rem", margin: "0.5rem 0" }}>
           where your imagination shapes the journey.
         </h3>
-        <p style={{ color: "#333", margin: "1rem 0" }}>
-          Explore stories, contribute, and see how they evolve!
+        <p>
+          Step into a world of choice-driven storytelling and iscover tales that will intrigue, inspire, and immerse you in unforgettable adventures.
         </p>
+        <div>
+          <h3>The Clockmaker's Curse</h3>
+          <p>A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.</p>
+          <h3>Whispers of the Verdant Throne</h3>
+          <p>In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?</p>
+          <h3>Beneath the Iron Skies</h3>
+          <p>A mechanic with big dreams and a pianist with a haunted past. Can they break free from the iron skies that bind them?</p>
+        </div>
+        <p>
+          With more stories in the works, <em>Typewryter</em> invites you to explore, choose, and shape your own path. Begin your journey today.
+        </p>
+        <p>
+          Explore, contribute, and see how the stories evolve!
+        </p>
+
       </div>
 
       {/* Bottom Ad */}

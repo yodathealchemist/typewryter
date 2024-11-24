@@ -26,10 +26,6 @@ export default function Home() {
         layout="responsive"
         width={1792} // Original width of the image
         height={1024} // Original height of the image
-        style={{
-          borderRadius: "10px",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        }}
         priority // Ensures the image is loaded early for performance
       />
       </div>

@@ -68,7 +68,7 @@ export default function Home() {
         </p>
         <div className="story-overview">
           <h2>Currently Active Stories</h2>
-          <hr />
+          ___________________________________________
           <h4>The Clockmaker&apos;s Curse:</h4>
           <p>A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.</p>
           <h4>Whispers of the Verdant Throne:</h4>
@@ -77,7 +77,7 @@ export default function Home() {
           <p>A mechanic with big dreams and a pianist with a haunted past. Can they break free from the iron skies that bind them?</p>
         </div>
         <p>
-          With more stories already in the works, <b>type_wryter</b> invites you to choose and shape the process.
+          With more stories already in the works, <b>type_wryter</b> invites you to actively participate and shape the process.
         </p>
         <p>
           Begin your journey today – explore, contribute, and see how your stories evolve!

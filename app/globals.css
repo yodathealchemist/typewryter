@@ -182,7 +182,7 @@ nav {
 .story-overview {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Space between story blocks */
+  gap: 0.5rem; /* Space between story blocks */
   margin-top: 2rem;
   padding: 1rem;
   background-color: #fdfdfd; /* Subtle background to distinguish from main page */
@@ -202,6 +202,6 @@ nav {
 .story-overview p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #555; /* Slightly muted text color for descriptions */
 }

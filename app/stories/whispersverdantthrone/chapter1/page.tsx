@@ -180,20 +180,20 @@ export default function Story() {
 <p>And then, as suddenly as it had appeared, the fox vanished. The light faded, leaving the clearing bathed in the soft, natural glow of dawn. Ceyla stood in the silence, her heart racing, her mind reeling. The forest seemed to breathe around her, its presence both comforting and overwhelming.</p>
 <p>Slowly, she turned and began the walk back to her cottage. The weight of the fox’s words hung heavy on her shoulders, but beneath the fear and uncertainty, a small spark of resolve began to grow. The balance was broken, and somehow, impossibly, it was up to her to restore it.</p>
 
-
-
-        
-        
       </div>
-      ———————————
-      <Link href="/stories/whispersverdantthrone/chapter2" className="link">
-        Next Chapter
-      </Link>
-      ———————————
-      <Link href="/stories/whispersverdantthrone" className="link">
-        Overview
-      </Link> 
-      ———————————
+
+      <div style={{ width: "200px" }}>
+        <hr />
+        <Link href="/stories/whispersverdantthrone/chapter2" className="link">
+          Next Chapter
+        </Link>
+        <hr />
+        <Link href="/stories/whispersverdantthrone" className="link">
+          Overview
+        </Link> 
+        <hr />
+      </div>
+      
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{

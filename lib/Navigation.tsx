@@ -15,10 +15,10 @@ export default function Navigation() {
   };
 
   return (
-  <nav>
+  <nav style= {{ width: "300px" }}>
     <ul
       style={{
-        width: "300px",
+        display: "flex",
         listStyle: "none",
         padding: 0,
         margin: 0,

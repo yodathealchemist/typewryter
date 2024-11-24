@@ -107,6 +107,10 @@ nav {
   display: block;
 }
 
+.dropdown:hover .dropdown-toggle {
+  font-weight: bold; /* Keep the dropdown label bold */
+}
+
 .dropdown-content li {
   margin: 3pt 0;
   padding: 5px;

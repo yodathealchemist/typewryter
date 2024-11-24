@@ -6,7 +6,13 @@ import { usePathname } from "next/navigation";
 export default function Navigation() {
   const pathname = usePathname();
 
-  const isActive = (href: string) => pathname === href;
+  // Check if the link is active (matches exactly or starts with the given href)
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === href; // Strict match for Home ("/")
+    }
+    return pathname.startsWith(href); // General check for other paths
+  };
 
   return (
     <nav>
@@ -26,7 +32,12 @@ export default function Navigation() {
           </Link>
         </li>
         <li className="dropdown">
-          <div className="link dropdown-toggle" style={{ cursor: "pointer" }}>
+          <div
+            className={`link dropdown-toggle ${
+              isActive("/stories") ? "active" : ""
+            }`}
+            style={{ cursor: "pointer" }}
+          >
             Stories ▼
           </div>
           <ul className="dropdown-content">
@@ -34,7 +45,8 @@ export default function Navigation() {
               <Link
                 href="/stories/clockmakerscurse"
                 className={`link ${
-                  isActive("/stories/clockmakerscurse") ? "active" : ""}`}
+                  isActive("/stories/clockmakerscurse") ? "active" : ""
+                }`}
               >
                 The Clockmaker&apos;s Curse
               </Link>
@@ -43,7 +55,8 @@ export default function Navigation() {
               <Link
                 href="/stories/whispersverdantthrone"
                 className={`link ${
-                  isActive("/stories/whispersverdantthrone") ? "active" : ""}`}
+                  isActive("/stories/whispersverdantthrone") ? "active" : ""
+                }`}
               >
                 Whispers of the Verdant Throne
               </Link>
@@ -52,7 +65,8 @@ export default function Navigation() {
               <Link
                 href="/stories/beneathironskies"
                 className={`link ${
-                  isActive("/stories/beneathironskies") ? "active" : ""}`}
+                  isActive("/stories/beneathironskies") ? "active" : ""
+                }`}
               >
                 Beneath the Iron Skies
               </Link>

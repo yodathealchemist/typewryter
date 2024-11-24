@@ -67,15 +67,17 @@ export default function Home() {
           Step into a world of choice-driven storytelling and discover tales that will intrigue, inspire, and immerse you in unforgettable adventures.
         </p>
         <div className="story-overview">
-          <h4>The Clockmaker&apos;s Curse</h4>
+          <h2>Currently Active Stories</h2>
+          <hr />
+          <h4>The Clockmaker&apos;s Curse:</h4>
           <p>A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.</p>
-          <h4>Whispers of the Verdant Throne</h4>
+          <h4>Whispers of the Verdant Throne:</h4>
           <p>In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?</p>
-          <h4>Beneath the Iron Skies</h4>
+          <h4>Beneath the Iron Skies:</h4>
           <p>A mechanic with big dreams and a pianist with a haunted past. Can they break free from the iron skies that bind them?</p>
         </div>
         <p>
-          With more stories in the works, <b>type_wryter</b> invites you to choose and shape the process.
+          With more stories already in the works, <b>type_wryter</b> invites you to choose and shape the process.
         </p>
         <p>
           Begin your journey today – explore, contribute, and see how your stories evolve!

@@ -62,7 +62,7 @@ export default function Navigation() {
         <li>
           <Link
             href="/backstage/"
-            className={`link ${isActive("/backstage/") ? "active" : ""}`}
+            className={`link ${isActive("/backstage") ? "active" : ""}`}
           >
             Backstage
           </Link>

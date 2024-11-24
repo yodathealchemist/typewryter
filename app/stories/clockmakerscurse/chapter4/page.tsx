@@ -41,7 +41,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2 style="text-align: center;">Chapter 4: The Call</h2>
+<h2 style={{ textAlign: "center" }}>Chapter 4: The Call</h2>
 
 
 <p>The morning was muted, wrapped in a heavy blanket of gray clouds that seemed to press down on Havensbrook, blurring the line between sky and earth. Amelia stood in the kitchen, her hands wrapped around a steaming mug of coffee. The aroma was rich, but its warmth did little to banish the cold knot in her chest. The silence in the house was overwhelming, filled with an almost oppressive weight that seemed to amplify every creak and groan of the old structure. The events of the night before lingered at the edges of her mind, like the remnants of a dream that refused to fully dissolve.</p>

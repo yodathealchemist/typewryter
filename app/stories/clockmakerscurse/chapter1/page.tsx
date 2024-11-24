@@ -41,7 +41,7 @@ export default function Story() {
           textAlign: "left",
         }}
       >
-<h2 style="text-align: center;">Chapter 1: Return to Havensbrook</h2>
+<h2 style={{ textAlign: "center" }}>Chapter 1: Return to Havensbrook</h2>
 
 <p>The coastal wind clawed at Amelia Carter’s coat as she stepped down from the train, her boots meeting the platform with a muted thud that echoed faintly in the damp evening air. She paused, the leather strap of her satchel digging into her shoulder as she adjusted it, her breath clouding in front of her face. The air was heavier here, carrying the unmistakable tang of salt and something else she couldn’t quite name – a faint metallic sharpness that reminded her of rusted hinges or old coins.</p>
 <p>Havensbrook’s station stretched out before her, a still life frozen in time. The canopy above her creaked softly in the breeze, its warped wooden shingles struggling to cling together under years of neglect. A lonely lamp dangled from a rusted bracket, its weak orange light sputtering in protest against the advancing twilight. The uneven planks of the platform, polished smooth by decades of footsteps, bore the scars of weather and use: cracks radiating like veins, knots darkened with moisture, and occasional patches of splintered wood that snagged the edges of unwary travelers’ luggage.</p>

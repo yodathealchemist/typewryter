@@ -82,24 +82,32 @@ export default function Story() {
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
       </div>
 
-      <h3>List of Chapters:</h3>
-      ———————————————————
-      <Link href="/stories/clockmakerscurse/chapter1" className="link">
-        Chapter 1: Return to Havensbrook
-      </Link>———————————————————
-      <Link href="/stories/clockmakerscurse/chapter2" className="link">
-        Chapter 2: The House
-      </Link>———————————————————
-      <Link href="/stories/clockmakerscurse/chapter3" className="link">
-        Chapter 3: Shadows
-      </Link>———————————————————
-      <Link href="/stories/clockmakerscurse/chapter4" className="link">
-        Chapter 4: The Call
-      </Link>———————————————————
-      <Link href="/stories/clockmakerscurse/chapter5" className="link">
-        Chapter 5: The Clock&apos;s Toll<br />
+      <div style={{ display: 'inline-block' }}>
+        <h3>List of Chapters:</h3>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter1">
+          Chapter 1: Return to Havensbrook
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter2">
+          Chapter 2: The House
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter3">
+          Chapter 3: Shadows
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter4">
+          Chapter 4: The Call
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter5">
+          Chapter 5: The Clock&apos;s Toll<br />
         <b>(Latest Chapter)</b>
-      </Link>———————————————————
+        </Link>
+        <hr />
+      </div>
+
       
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

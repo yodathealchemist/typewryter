@@ -42,7 +42,7 @@ export default function Story() {
           marginBottom: "20px",
         }}
       >
-        <Image
+      <Image
         src="/clockmakerscurse.webp"
         alt="The Clockmaker's Curse cover"
         layout="responsive"

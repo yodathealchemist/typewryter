@@ -70,27 +70,25 @@ export default function Navigation() {
             style={{ cursor: "pointer" }}
             onClick={toggleDropdown}
           >
-            Stories {isOpen ? '▲' : '▼'}
+            Stories ▼
           </div>
-          {isOpen && (
-            <ul className="dropdown-content" ref={dropdownRef}>
-              <li>
-                <Link href="/stories/clockmakerscurse" className="link" onClick={closeDropdown}>
-                  The Clockmaker&apos;s Curse
-                </Link>
-              </li>
-              <li>
-                <Link href="/stories/whispersverdantthrone" className="link" onClick={closeDropdown}>
-                  Whispers of the Verdant Throne
-                </Link>
-              </li>
-              <li>
-                <Link href="/stories/beneathironskies" className="link" onClick={closeDropdown}>
-                  Beneath the Iron Skies
-                </Link>
-              </li>
-            </ul>
-          )}
+          <ul className="dropdown-content" ref={dropdownRef}>
+            <li>
+              <Link href="/stories/clockmakerscurse" className="link" onClick={closeDropdown}>
+                The Clockmaker&apos;s Curse
+              </Link>
+            </li>
+            <li>
+              <Link href="/stories/whispersverdantthrone" className="link" onClick={closeDropdown}>
+                Whispers of the Verdant Throne
+              </Link>
+            </li>
+            <li>
+              <Link href="/stories/beneathironskies" className="link" onClick={closeDropdown}>
+                Beneath the Iron Skies
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link href="/backstage/" className="link">

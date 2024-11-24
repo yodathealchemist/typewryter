@@ -128,7 +128,7 @@ nav {
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
-  margin: 20px 10px;
+  margin: 20px 0;
   max-width: 800px; /* Maximum width for the form */
   width: 100%; /* Reduce width by padding on both sides */
   padding: 20px;

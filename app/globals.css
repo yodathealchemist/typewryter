@@ -128,10 +128,10 @@ nav {
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
-  margin: 20px; /* Center form with vertical margin */
+  margin: 20px 10px;
   max-width: 800px; /* Maximum width for the form */
   width: 100%; /* Reduce width by padding on both sides */
-  /*padding: 20px;*/
+  padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;

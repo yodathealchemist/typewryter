@@ -190,6 +190,13 @@ nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+.story-overview h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333; /* Neutral, easy-to-read color */
+}
+
 /* Styling for each story title */
 .story-overview h4 {
   font-size: 1.2rem;

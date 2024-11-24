@@ -192,41 +192,16 @@ nav {
 
 /* Styling for each story title */
 .story-overview h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
   color: #333; /* Neutral, easy-to-read color */
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Slight emphasis */
 }
 
 /* Styling for story descriptions */
 .story-overview p {
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0;
+  margin-bottom: 10px;
   color: #555; /* Slightly muted text color for descriptions */
-}
-
-/* Hover effect for individual story sections */
-.story-overview h2:hover,
-.story-overview p:hover {
-  color: #007acc; /* Add interactivity with a color change on hover */
-  cursor: pointer; /* Encourages exploration */
-}
-
-/* Optional media query for responsive design */
-@media (min-width: 768px) {
-  .story-overview {
-    flex-direction: row;
-    flex-wrap: wrap; /* Allow stories to wrap on larger screens */
-    gap: 2rem;
-  }
-  
-  .story-overview h2 {
-    font-size: 1.75rem; /* Slightly larger font for wider screens */
-  }
-  
-  .story-overview p {
-    font-size: 1.125rem; /* Improve readability for larger viewports */
-  }
 }

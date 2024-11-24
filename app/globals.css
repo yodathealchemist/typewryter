@@ -131,7 +131,7 @@ nav {
   margin: 20px; /* Center form with vertical margin */
   max-width: 800px; /* Maximum width for the form */
   width: 100%; /* Reduce width by padding on both sides */
-  padding: 20px;
+  /*padding: 20px;*/
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;

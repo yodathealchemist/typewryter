@@ -112,21 +112,22 @@ export default function Story() {
 <p>Amelia exhaled slowly, her breath fogging faintly in the cool air. She felt a shiver run down her spine, though she couldn’t tell if it was from the chill or the growing sense of unease that seemed to fill the room. Whatever Bernard had been working on, it was clear that it was more than just clockwork. The intricate mechanisms and carefully drawn schematics were only part of the story. There was something deeper here, something hidden beneath the surface.</p>
 <p>Turning toward the door, Amelia cast one last glance around the workshop. The ticking of the clocks followed her as she stepped out, their rhythm steady and unrelenting. She closed the door softly behind her, the cool air of the house feeling warmer by comparison. The notebook’s weight lingered in her mind, its presence impossible to ignore. She didn’t know what she had stumbled into, but one thing was clear: Bernard had left her a puzzle. And now, it was up to her to solve it.</p>
 
-        
+      <div style={{ width: "200px" }}>
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter3" className="link">
+          Next Chapter
+        </Link>
+        <hr />
+        <Link href="/stories/clockmakerscurse" className="link">
+          Overview
+        </Link> 
+        <hr />
+        <Link href="/stories/clockmakerscurse/chapter1" className="link">
+          Previous Chapter
+        </Link>
+        <hr />
       </div>
-      ———————————
-      <Link href="/stories/clockmakerscurse/chapter3" className="link">
-        Next Chapter
-      </Link>
-      ———————————
-      <Link href="/stories/clockmakerscurse" className="link">
-        Overview
-      </Link> 
-      ———————————
-      <Link href="/stories/clockmakerscurse/chapter1" className="link">
-        Previous Chapter
-      </Link>
-      ———————————
+      
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div
         style={{

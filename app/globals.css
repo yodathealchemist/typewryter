@@ -126,16 +126,17 @@ nav {
 .feedback-form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center form horizontally */
-  justify-content: center; /* Center form vertically */
-  margin: 20px auto; /* Center on the page with margin */
-  max-width: 800px; /* Set a maximum width for the form */
-  width: 100%; /* Allow full width up to the max-width */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  margin: 20px auto; /* Center form with vertical margin */
+  max-width: 800px; /* Maximum width for the form */
+  width: calc(100% - 40px); /* Reduce width by padding on both sides */
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .feedback-label {

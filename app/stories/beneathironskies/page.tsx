@@ -1,6 +1,6 @@
 "use client";
 
-{/* import FeedbackForm from "@/lib/FeedbackForm"; */}
+import Image from "next/image";
 
 export default function Story() {
   return (
@@ -13,7 +13,6 @@ export default function Story() {
         textAlign: "center",
       }}
     >
-      <h1>Beneath the Iron Skies</h1>
       
       {/* Top Ad (Standard size, e.g., 728x90) */}
       <div
@@ -31,6 +30,25 @@ export default function Story() {
         className="top-ad"
       >
         <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+      </div>
+      
+      <h1>Beneath the Iron Skies</h1>
+      
+      {/* Image */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "800px", // Maximum container width for the image
+          marginBottom: "20px",
+        }}
+      >
+      <Image
+        src="/ironskies.webp"
+        alt="Beneath the Iron Skies cover"
+        layout="responsive"
+        width={1792} // Original width of the image
+        height={1024} // Original height of the image
+      />
       </div>
          
       {/* Main Content */}

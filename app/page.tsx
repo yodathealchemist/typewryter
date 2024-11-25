@@ -91,9 +91,9 @@ export default function Home() {
         <p>
           Begin your journey today – explore, contribute, and see how your stories evolve!
         </p>
-        <h2>
-          <em>Your Choices – Your Stories – Your World</em>
-        </h2>
+        <h1>
+          <em>Your Choices <br /> Your Stories <br /> Your World</em>
+        </h1>
 
       </div>
 

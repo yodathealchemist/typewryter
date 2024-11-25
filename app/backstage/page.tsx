@@ -28,7 +28,7 @@ export default function Home() {
         <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
       
-      <p><br /><br /> Our backstage area will open soon. <br /><br /></p>
+      <p><br /><br /> Our backstage area is not yet open. <br /><br /></p>
 
       {/* Bottom Ad (Large size, e.g., 970x250) */}
       <div

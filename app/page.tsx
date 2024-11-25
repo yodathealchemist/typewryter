@@ -73,10 +73,12 @@ export default function Home() {
           <Link href="/stories/clockmakerscurse" className="link">
             A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.
           </Link>
+          <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
           <h4>Whispers of the Verdant Throne</h4>
           <Link href="/stories/whispersverdantthrone" className="link">
             In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?
           </Link>
+          <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
           <h4>Beneath the Iron Skies</h4>
           <Link href="/stories/beneathironskies" className="link">
             A mechanic with big dreams and a pianist with a haunted past. Can they break free from the iron skies that bind them?

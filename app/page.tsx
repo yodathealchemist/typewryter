@@ -70,8 +70,8 @@ export default function Home() {
         <div className="story-overview">
           <h2>Currently Active Stories</h2>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
-          <h4>The Clockmaker&apos;s Curse</h4>
           <Link href="/stories/clockmakerscurse" className="link">
+            <h4>The Clockmaker&apos;s Curse</h4>
             A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.
           </Link>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />

@@ -82,8 +82,9 @@ export default function Home() {
             In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?
           </Link>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
-          <h4>Beneath the Iron Skies</h4>
           <Link href="/stories/beneathironskies" className="link">
+            <h4>Beneath the Iron Skies</h4>
+            <div style={{ height: "0.5em" }}></div>
             A mechanic with big dreams and a pianist with a haunted past. Can they break free from the iron skies that bind them?
           </Link>
         </div>

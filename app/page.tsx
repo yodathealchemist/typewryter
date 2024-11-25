@@ -92,7 +92,7 @@ export default function Home() {
           Begin your journey today – explore, contribute, and see how your stories evolve!
         </p>
         <h1>
-          <em>Your Choices <br /> Your Stories <br /> Your World</em>
+          <em>– Your Choices –<br />– Your Stories –<br />– Your World –</em>
         </h1>
 
       </div>

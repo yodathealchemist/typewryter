@@ -206,7 +206,7 @@ nav {
 }
 
 /* Styling for story descriptions */
-.story-overview p {
+.story-overview.link {
   font-size: 1rem;
   line-height: 1.6;
   padding-bottom: 2rem;

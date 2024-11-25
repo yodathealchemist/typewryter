@@ -29,7 +29,7 @@ export default function Story() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
       
       <h1>The Clockmaker&apos;s Curse</h1>
@@ -79,7 +79,7 @@ export default function Story() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
 
       <div style={{ width: "300px" }}>
@@ -124,7 +124,7 @@ export default function Story() {
         }}
         className="bottom-ad"
       >
-        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
     </div>
   );

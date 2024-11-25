@@ -60,7 +60,6 @@ export default function Story() {
 <p>She tore her gaze away from the tower, blinking hard as if to shake its hold over her. The station felt different now, smaller somehow, its worn edges sharper and more defined. Amelia’s hand moved to her coat, her fingers brushing against the cold metal of the buttons, but she didn’t fasten it. The chill she felt wasn’t something fabric could shield her from.</p>
 <p>The sound of gravel shifting broke the stillness, and Amelia turned sharply, her heart leaping into her throat. At first, she saw nothing, only the faint glow of the platform lamps and the dark shapes of trees swaying in the distance. Then a figure emerged, moving slowly toward her from the edge of the lot.</p>
 <p>“Miss Carter?”</p>
-<p>The voice was low, steady, and impossibly familiar.</p>
 
       </div>
         

@@ -30,7 +30,7 @@ export default function Story() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
          
       {/* Main Content */}
@@ -78,7 +78,7 @@ export default function Story() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
          
       {/* Main Content */}
@@ -126,7 +126,7 @@ export default function Story() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
       
       <div style={{ width: "200px" }}>
@@ -156,7 +156,7 @@ export default function Story() {
         }}
         className="bottom-ad"
       >
-        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
     </div>
   );

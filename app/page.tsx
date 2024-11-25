@@ -68,7 +68,7 @@ export default function Home() {
           Step into a world of choice-driven storytelling and discover tales that will intrigue, inspire, and immerse you in unforgettable adventures.
         </p>
         <div className="story-overview">
-          <h2>Currently Active Stories:</h2>
+          <h2>Currently Active Stories</h2>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
           <h4>The Clockmaker&apos;s Curse</h4>
           <Link href="/stories/clockmakerscurse" className="link">

@@ -25,7 +25,7 @@ export default function Home() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
       
       <p><br /><br /> Our backstage area will open soon. <br /><br /></p>
@@ -45,7 +45,7 @@ export default function Home() {
         }}
         className="bottom-ad"
       >
-        <p style={{ color: "#999" }}>970x250 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
       
     </div>

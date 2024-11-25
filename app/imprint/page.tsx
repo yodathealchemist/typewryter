@@ -26,7 +26,7 @@ export default function Imprint() {
 <p>This disclaimer also applies to links and references set by commentators within our own website. For illegal, incorrect or incomplete contents and in particular for damages resulting from the use or non-use of such information, only the service providers of the pages to which reference is made are liable, not those who merely refer to the respective publications via links.</p>
 <p>If we become aware of any legal infringements, we will remove the external links immediately.</p>
 
-<h2> style={{ fontSize: "1.5rem" }}>Copyright</h2>
+<h2 style={{ fontSize: "1.5rem" }}>Copyright</h2>
 <p>The content and works published on our website are subject to German copyright law. The reproduction, editing, distribution and any kind of utilisation of the intellectual property in an ideal or material sense of the copyright holder outside the limits of copyright law require the prior written consent of the respective copyright holder within the meaning of copyright law. Downloads and copies of this site are only permitted for private and non-commercial use. If the content on our website was not created by us, the copyrights of third parties must be observed. Third-party content is labelled as such. Should you nevertheless become aware of an infringement of copyright, please inform us accordingly. As soon as we become aware of any legal infringements, we will remove such content immediately.</p>
 
 <h1><br /><br />Privacy Policy</h1>

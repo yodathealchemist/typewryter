@@ -72,11 +72,13 @@ export default function Home() {
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
           <Link href="/stories/clockmakerscurse" className="link">
             <h4>The Clockmaker&apos;s Curse</h4>
+            <div style={{ height: "0.5em" }}></div>
             A mysterious clock tower. A journalist chasing the truth. Uncover the dark secrets of Havensbrook before time runs out.
           </Link>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />
-          <h4>Whispers of the Verdant Throne</h4>
           <Link href="/stories/whispersverdantthrone" className="link">
+            <h4>Whispers of the Verdant Throne</h4>
+            <div style={{ height: "0.5em" }}></div>
             In a land of crumbling elemental realms, a quiet herbalist is called to restore balance. Will she save the world – or destroy it?
           </Link>
           <hr style={{ border: '1px solid #ccc', width: '80%', margin: '20px auto' }} />

@@ -61,7 +61,7 @@ export default function Home() {
         }}
         className="top-ad"
       >
-        <p style={{ color: "#999" }}>728x90 Ad Placeholder</p>
+        <p style={{ color: "#999" }}>Ad Placeholder</p>
       </div>
         
         <p>
@@ -114,7 +114,7 @@ export default function Home() {
           marginTop: "20px",
         }}
       >
-        <p style={{ color: "#666", margin: 0 }}>970x250 Ad Placeholder</p>
+        <p style={{ color: "#666", margin: 0 }}>Ad Placeholder</p>
       </div>
     </div>
   );

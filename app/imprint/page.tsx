@@ -13,7 +13,7 @@ export default function Imprint() {
 
 <p>The laws of the Federal Republic of Germany apply to any legal disputes arising from the use of this website.</p>
 
-<h2> style={{ fontSize: "1.5rem" }}>Exclusion of Liability – Disclaimer</h2>
+<h2 style={{ fontSize: "1.5rem" }}>Exclusion of Liability – Disclaimer</h2>
 <h3 style={{ fontSize: "1rem" }}>Liability for Content:</h3>
 
 <p>All content on our website has been created with the utmost care and to the best of our knowledge. However, we cannot accept any liability for the accuracy, completeness and topicality of the content. As a service provider, we are responsible for our own content on these pages. We are not obliged, however, to monitor transmitted or stored third-party information or to actively investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general legislation remain unaffected by this.</p>
